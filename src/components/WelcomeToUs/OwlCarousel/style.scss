@@ -1,0 +1,13 @@
+.welcome-carousel {
+    .col-sm-12.btn.btn-info {
+        display: none;
+    }
+    .owl-nav {
+        display: none;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: none;
+        outline: none;
+        margin-top: 10px;
+    }
+}

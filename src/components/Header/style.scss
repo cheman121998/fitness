@@ -1,0 +1,27 @@
+.header {
+    background: rgba(36, 39, 46, 0.86);
+    color: white;
+    padding: 28px 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    .container {
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .menu-item {
+                .ant-menu {
+                    background: rgba(112, 112, 112, -0.86);
+                    color: white;
+
+                    .ant-menu-item-active {
+                        color: #ffffff !important;
+                        border-bottom: 2px solid #ff1d6a;
+                    }
+                }
+            }
+        }
+    }
+}

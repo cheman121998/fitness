@@ -1,0 +1,37 @@
+.content.welcome-content {
+    .txt-about {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 25px;
+        letter-spacing: 2px;
+        color: #ff6c2c;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 25px;
+        color: #ffffff;
+        margin-top: 4px;
+    }
+    .line {
+        border-bottom: 2px solid #ff1d6a;
+        width: 125px;
+        margin-top: 24px;
+        margin-bottom: 52px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 25px;
+        color: #ffffff;
+        width: 578px;
+        button.ant-btn {
+            background: transparent;
+            border: none;
+            color: #ff1d6a;
+            font-weight: bold;
+        }
+    }
+    p:first-child {
+        color: #ff6c2c;
+    }
+}

@@ -1,0 +1,70 @@
+.testmonials {
+    background: #181a1f;
+    margin-top: -5px;
+    padding-bottom: 150px;
+    height: 100vh;
+    .container {
+        .test-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            margin: 0 auto;
+            #owl-theme1 .owl-nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: absolute;
+                left: -50px;
+                right: -50px;
+                top: 0%;
+                color: #ffffff;
+                font-size: 60px;
+            }
+            #owl-theme1.owl-theme {
+                text-align: center;
+                width: 70%;
+                .item {
+                    position: relative;
+                    div {
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #ffffff;
+                        font-family: 'Montserrat', sans-serif;
+                        font-style: italic;
+                        font-weight: lighter;
+                    }
+                }
+            }
+            #owl-theme1.owl-theme .owl-dots .owl-dot {
+                display: none;
+            }
+            #owl-theme1 .owl-carousel .owl-nav button.owl-prev,
+            #owl-theme1 .owl-carousel .owl-nav button.owl-next {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: #ff1d6a;
+                outline: none;
+            }
+            .owl-carousel .owl-item img {
+                display: block;
+                width: 100%;
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+            }
+            #owl-theme2 {
+                margin: 16px auto;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

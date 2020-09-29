@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Raleway:wght@100;200;300;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+#dont-stop {
+    background: url('./../../assets/images/bg-main.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 1050px;
+}
+.dont-stop {
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150vh;
+    .group-icon {
+        width: 74px;
+        height: 278px;
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                line-height: 60px;
+                a {
+                    color: #000000;
+
+                    background: #ffffff;
+                    border-top: 1px solid #ff6c2c;
+                    margin: 0;
+                    padding: 20px;
+                }
+                a:last-child {
+                    border-bottom: 1px solid #ff6c2c;
+                }
+            }
+        }
+    }
+
+    .intro-dont-stop {
+        background-color: #292f39;
+        width: 928px;
+        height: 448px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 120px;
+        h1 {
+            font-size: 65px;
+            line-height: 70px;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            width: 458px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            width: 510px;
+            color: #bfbfbf;
+            font-family: 'Raleway', sans-serif;
+            span {
+                color: #ff6c2c;
+            }
+        }
+        .btn-group {
+            display: flex;
+            align-items: center;
+            .btn-get-started {
+                margin-right: 60px;
+                border: none;
+                color: #ffffff;
+                background: #ff1d6a;
+                width: 216px;
+                height: 62px;
+                text-align: center;
+                font-size: 15px;
+                font-weight: bold;
+                font-family: 'Raleway', sans-serif;
+            }
+            .youtube {
+                display: flex;
+                align-items: center;
+                .btn-youtube {
+                    color: #ff1d6a;
+                    margin-right: 10px;
+                    font-size: 24px;
+                }
+                .txt-watch {
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-size: 15px;
+                    font-family: 'Raleway', sans-serif;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

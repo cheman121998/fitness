@@ -1,0 +1,23 @@
+.footer {
+    background: #181a1f;
+    color: #ffffff;
+
+    .container {
+        position: relative;
+        .menu-footer {
+            background: #ff1d6a;
+            color: #ffffff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        h3 {
+            color: #ffffff;
+            line-height: 34px;
+            font-size: 28px;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.katlimineCore {
+    .container {
+        text-align: left;
+        color: #bbbbbb;
+        font-family: 'Raleway', sans-serif;
+        h3 {
+            font-size: 35px;
+            line-height: 42px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        h6 {
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 600;
+            color: #bbbbbb;
+        }
+        .line {
+            width: 62px;
+            border-bottom: 2px solid #ff1d6a;
+            margin-bottom: 42px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .group-icon {
+            ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
+                li {
+                    margin-right: 24px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: #ff1d6a;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.5s;
+                    a {
+                        color: #ffffff;
+                        font-size: 16px;
+                    }
+                }
+                li:hover {
+                    box-shadow: 0 5px 10px #888888;
+                }
+            }
+        }
+    }
+}

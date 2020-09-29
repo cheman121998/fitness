@@ -1,0 +1,45 @@
+.cards {
+    .container {
+        .ant-card {
+            background: grey;
+            font-family: 'Raleway', sans-serif;
+            height: 200px;
+            width: 340px;
+            border: none;
+            margin-top: -25%;
+            .ant-card-body {
+                padding: 40px;
+                .ant-card-meta-title {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 25px;
+                    width: 156px;
+                    white-space: break-spaces;
+                    color: #ffffff;
+                }
+                .ant-card-meta-description {
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #ffffff;
+                }
+                button.ant-btn {
+                    background: #ff1d6a;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 15px;
+                    width: 98px;
+                    height: 28px;
+                    font-family: 'Roboto', sans-serif;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .ant-col-lg-offset-2 {
+        margin: 0 auto;
+    }
+}
