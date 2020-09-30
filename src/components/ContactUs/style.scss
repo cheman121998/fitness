@@ -1,0 +1,117 @@
+#contact-us {
+    background: url(./../../assets/images/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 2;
+        h2 {
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 25px;
+            color: #ffffff;
+            margin-top: 4px;
+        }
+        .line {
+            border-bottom: 2px solid #ff1d6a;
+            width: 125px;
+            margin-top: 24px;
+            margin-bottom: 52px;
+        }
+    }
+
+    .mask-cover {
+        z-index: 0;
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(24, 26, 31, 0.9);
+    }
+    .ant-form {
+        width: 70%;
+        margin: 30px auto;
+        z-index: 2;
+        .ant-row {
+            .ant-col {
+                width: 50%;
+                .ant-form-item-control-input {
+                    border: 1px solid #ff6c2c;
+                    width: 100%;
+                    background: transparent;
+                }
+                input,
+                textarea,
+                span.ant-cascader-picker {
+                    background: transparent;
+                    border: none;
+                }
+                button.ant-btn.ant-btn-primary {
+                    background: #ff1d6a;
+                    width: 418px;
+                    height: 64px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-radius: 2px;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .contact {
+        color: #ffffff;
+        z-index: 2;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 36px;
+        margin-top: 40px;
+        .email {
+            padding-right: 50px;
+            border-right: 2px solid #ffffff;
+        }
+        .phone {
+            margin-left: 50px;
+        }
+        .group-icon {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            ul {
+                list-style: none;
+                display: flex;
+                padding: 0;
+                li {
+                    margin-right: 24px;
+                    width: 30px;
+                    height: 30px;
+                    border: none;
+                    color: #ff1d6a;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.5s;
+
+                    a {
+                        color: #ff1d6a;
+                        font-size: 16px;
+                    }
+                }
+                li:hover {
+                    box-shadow: 0 5px 10px #888888;
+                }
+            }
+        }
+    }
+}
