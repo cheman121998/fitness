@@ -48,12 +48,13 @@ export default class RecentBlog extends React.Component {
                                 ]}
                             >
                                 <Meta
+                                    style={({ width: '100%' }, { padding: '90px' })}
                                     title="Female Boxers Describe What It’s Like to Take a Punch"
                                     description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis."
                                 />
                             </Card>
                         </Col>
-                        <Col className="gutter-row" span={16}>
+                        <Col className="gutter-row card-right" span={16}>
                             <Card
                                 style={{ width: '100%' }}
                                 cover={

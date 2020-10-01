@@ -1,59 +1,14 @@
 import React from 'react';
-import { Form, Input, Button, Cascader, Tooltip, Row, Col } from 'antd';
-import { TwitterOutlined, FacebookOutlined, InstagramOutlined } from '@ant-design/icons';
+import { Form, Input, Button, Cascader, Tooltip, Row, Col, Select } from 'antd';
+import { TwitterOutlined, FacebookOutlined, LinkedinOutlined } from '@ant-design/icons';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 import './style.scss';
 
-const layout = {
-    labelCol: { span: 8 },
-    wrapperCol: { span: 16 },
-};
+const { Option } = Select;
 
-const validateMessages = {
-    required: '${label} is required!',
-    types: {
-        email: '${label} is not validate email!',
-        number: '${label} is not a validate number!',
-    },
-    number: {
-        range: '${label} must be between ${min} and ${max}',
-    },
-};
-const residences = [
-    {
-        value: 'zhejiang',
-        label: 'Zhejiang',
-        children: [
-            {
-                value: 'hangzhou',
-                label: 'Hangzhou',
-                children: [
-                    {
-                        value: 'xihu',
-                        label: 'West Lake',
-                    },
-                ],
-            },
-        ],
-    },
-    {
-        value: 'jiangsu',
-        label: 'Jiangsu',
-        children: [
-            {
-                value: 'nanjing',
-                label: 'Nanjing',
-                children: [
-                    {
-                        value: 'zhonghuamen',
-                        label: 'Zhong Hua Men',
-                    },
-                ],
-            },
-        ],
-    },
-];
-
+function handleChange(value) {
+    console.log(`selected ${value}`);
+}
 export default class ContactUs extends React.Component {
     render() {
         return (
@@ -63,36 +18,35 @@ export default class ContactUs extends React.Component {
                     <h2>Contact Us</h2>
                     <div className="line"></div>
                 </div>
-                <Form {...layout} name="nest-messages" validateMessages={validateMessages}>
-                    <Row>
-                        <Col>
-                            <Form.Item name={['user', 'email']} rules={[{ type: 'email' }]}>
-                                <Input placeholder="Email" />
-                            </Form.Item>
+                <Form>
+                    <Row gutter={16}>
+                        <Col span={12}>
+                            <Input placeholder="Email" />
                         </Col>
-                        <Col>
-                            <Form.Item
-                                name="residence"
-                                rules={[
-                                    {
-                                        type: 'array',
-                                        required: true,
-                                        message: 'Please select your habitual residence!',
-                                    },
-                                ]}
+                        <Col span={12}>
+                            <Select
+                                defaultValue="lucy"
+                                style={{ width: 120 }}
+                                onChange={handleChange}
                             >
-                                <Cascader placeholder="Subjects" options={residences} />
-                            </Form.Item>
+                                <Option value="jack">Jack</Option>
+                                <Option value="lucy">Lucy</Option>
+                                <Option value="disabled" disabled>
+                                    Disabled
+                                </Option>
+                                <Option value="Yiminghe">yiminghe</Option>
+                            </Select>
                         </Col>
                     </Row>
                     <Form.Item name={['user', 'introduction']}>
-                        <Input.TextArea placeholder="Write Your Message Here..." />
+                        <Input.TextArea
+                            className="form-des"
+                            placeholder="Write Your Message Here..."
+                        />
                     </Form.Item>
-                    <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-                        <Button type="primary" htmlType="submit">
-                            Submit
-                        </Button>
-                    </Form.Item>
+                    <Tooltip trigger="click" title="Btn Sumbit">
+                        <Button>Submit</Button>
+                    </Tooltip>
                 </Form>
                 <div className="contact">
                     <div>
@@ -119,7 +73,7 @@ export default class ContactUs extends React.Component {
                                 <li>
                                     <Tooltip trigger="click" title="Social Media">
                                         <Link to="./global">
-                                            <InstagramOutlined />
+                                            <LinkedinOutlined />
                                         </Link>
                                     </Tooltip>
                                 </li>

@@ -15,7 +15,15 @@ export default class ShowOwlCarousel extends React.Component {
         return (
             <div className="welcome-carousel">
                 <div className="container-fluid">
-                    <OwlCarousel items={3} className="owl-theme" loop nav margin={8}>
+                    <OwlCarousel
+                        items={3}
+                        className="owl-theme"
+                        loop
+                        nav
+                        margin={8}
+                        autoplay="true"
+                        autoplayTimeout="2000"
+                    >
                         <Router>
                             <div>
                                 <Link to="/">

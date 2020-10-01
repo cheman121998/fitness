@@ -16,8 +16,8 @@ class DontStop extends React.Component {
         return (
             <div id="dont-stop">
                 <Header />
-
                 <div className="dont-stop">
+                    <div className="mask-cover"></div>
                     <div className="group-icon">
                         <Router>
                             <ul>
@@ -44,34 +44,29 @@ class DontStop extends React.Component {
                             </ul>
                         </Router>
                     </div>
-                    <div>
-                        <div className="intro-dont-stop">
-                            <h1>Don't Stop Till You Drop</h1>
-                            <p>
-                                The best way to <span>make sure your body and mind </span>are ready
-                                for work is to wake them up with a good workout.
-                            </p>
-                            <div className="btn-group">
-                                <Tooltip
-                                    trigger="click"
-                                    placement="topLeft"
-                                    title="GET STARTED NOW"
-                                    arrowPointAtCenter
-                                >
-                                    <Button className="btn-get-started">GET STARTED NOW</Button>
-                                </Tooltip>
-                                <div className="youtube">
-                                    <span>
-                                        <Tooltip
-                                            placement="topLeft"
-                                            title="You Tube"
-                                            trigger="click"
-                                        >
-                                            <YoutubeOutlined className="btn-youtube" />
-                                        </Tooltip>
-                                    </span>
-                                    <span className="txt-watch">WATCH REVIEWS</span>
-                                </div>
+
+                    <div className="intro-dont-stop">
+                        <h1>Don't Stop Till You Drop</h1>
+                        <p>
+                            The best way to <span>make sure your body and mind </span>are ready for
+                            work is to wake them up with a good workout.
+                        </p>
+                        <div className="btn-group">
+                            <Tooltip
+                                trigger="click"
+                                placement="topLeft"
+                                title="GET STARTED NOW"
+                                arrowPointAtCenter
+                            >
+                                <Button className="btn-get-started">GET STARTED NOW</Button>
+                            </Tooltip>
+                            <div className="youtube">
+                                <span>
+                                    <Tooltip placement="topLeft" title="You Tube" trigger="click">
+                                        <YoutubeOutlined className="btn-youtube" />
+                                    </Tooltip>
+                                </span>
+                                <span className="txt-watch">WATCH REVIEWS</span>
                             </div>
                         </div>
                     </div>

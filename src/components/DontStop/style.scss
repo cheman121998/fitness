@@ -2,8 +2,9 @@
 #dont-stop {
     background: url('./../../assets/images/bg-main.png') no-repeat;
     background-size: cover;
-    height: 100vh;
-    min-height: 1050px;
+    background-attachment: scroll;
+    z-index: 3;
+    // min-height: 1050px;
 }
 .dont-stop {
     max-width: 1920px;
@@ -11,9 +12,14 @@
     justify-content: space-between;
     align-items: center;
     height: 150vh;
+    position: relative;
+    .mask-cover {
+        background-color: rgba(24, 26, 31, 0.28);
+    }
     .group-icon {
         width: 74px;
         height: 278px;
+        z-index: 2;
         ul {
             list-style: none;
             padding: 0;
@@ -42,6 +48,7 @@
         flex-direction: column;
         justify-content: center;
         padding-left: 120px;
+        z-index: 2;
         h1 {
             font-size: 65px;
             line-height: 70px;

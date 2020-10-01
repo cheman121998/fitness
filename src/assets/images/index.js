@@ -16,6 +16,11 @@ import sliderManLift from './slider-man-lifting.jpg';
 import sliderPullRope from './slider-pull-rope.jpg';
 import sliderThreeWomen from './slider-three-women.jpg';
 import avt from './avt-woman.jpg';
+import cardClassesManBoxer from './man-boxer.jpg';
+import cardClassesManClub from './man-club.jpg';
+import cardClassesManGym from './man-gym.jpg';
+import cardClassesManPower from './man-powerful.jpg';
+
 export {
     logo,
     cardWelcomeSexyWoman,
@@ -35,4 +40,8 @@ export {
     sliderPullRope,
     sliderKetteleBell,
     avt,
+    cardClassesManBoxer,
+    cardClassesManPower,
+    cardClassesManGym,
+    cardClassesManClub,
 };

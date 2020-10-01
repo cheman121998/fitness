@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    height: 100vh;
+    height: 150vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -31,44 +31,93 @@
         }
     }
 
-    .mask-cover {
-        z-index: 0;
-        position: absolute !important;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(24, 26, 31, 0.9);
-    }
     .ant-form {
         width: 70%;
         margin: 30px auto;
         z-index: 2;
         .ant-row {
             .ant-col {
-                width: 50%;
-                .ant-form-item-control-input {
+                .ant-input {
+                    background: transparent;
                     border: 1px solid #ff6c2c;
-                    width: 100%;
-                    background: transparent;
-                }
-                input,
-                textarea,
-                span.ant-cascader-picker {
-                    background: transparent;
-                    border: none;
-                }
-                button.ant-btn.ant-btn-primary {
-                    background: #ff1d6a;
-                    width: 418px;
                     height: 64px;
-                    font-size: 20px;
-                    font-weight: bold;
-                    border-radius: 2px;
-                    outline: none;
+                    margin-bottom: 40px;
+                    color: #ffffff;
+                    ::placeholder {
+                        color: #bbbbbb;
+                        font-size: 18px;
+
+                        line-height: 22px;
+                    }
+                }
+                .ant-select-show-search.ant-select-single:not(.ant-select-customize-input)
+                    .ant-select-selector {
+                    border: 1px solid #ff6c2c;
+                    background: transparent;
+                    color: #ffffff;
+                    height: 64px;
+                    width: 100% !important;
                 }
             }
+            // .ant-form-item {
+            //     border: 1px solid #ff6c2c;
+            //     background: transparent;
+            //     margin-right: 24px;
+            //     line-height: 64px;
+            //     input {
+            //         color: #ffffff !important;
+            //         width: 100%;
+            //     }
+            //     ::placeholder {
+            //         color: #bbbbbb;
+            //         font-size: 18px;
+            //         line-height: 22px;
+            //     }
+            //     .ant-cascader-picker-label {
+            //         color: #ffffff;
+            //     }
+            // }
+            // .ant-col {
+            //     width: 50%;
+            //     // .ant-form-item-control-input {
+            //     //     border: 1px solid #ff6c2c;
+            //     //     width: 100%;
+            //     //     background: transparent;
+            //     // }
+            //     input,
+            //     textarea,
+            //     span.ant-cascader-picker {
+            //         background: transparent;
+            //         border: none;
+            //     }
+            //     button.ant-btn.ant-btn-primary {
+            //         background: #ff1d6a;
+            //         width: 418px;
+            //         height: 64px;
+            //         font-size: 20px;
+            //         font-weight: bold;
+            //         border-radius: 2px;
+            //         outline: none;
+            //     }
+            // }
         }
+        .form-des {
+            height: 400px;
+        }
+        // .ant-row.ant-form-item.form-des {
+        //     border: 1px solid #ff6c2c;
+        //     background: transparent;
+        //     margin-right: 24px;
+        //     height: 188px;
+        //     ::placeholder {
+        //         color: #bbbbbb;
+        //         font-size: 18px;
+        //         line-height: 22px;
+        //     }
+        //     textarea#nest-messages_user_introduction {
+        //         color: #ffffff;
+        //     }
+        // }
     }
     .contact {
         color: #ffffff;
@@ -102,6 +151,7 @@
                     align-items: center;
                     justify-content: center;
                     transition: 0.5s;
+                    outline: none;
 
                     a {
                         color: #ff1d6a;
@@ -114,4 +164,15 @@
             }
         }
     }
+}
+@media screen and (max-width: 576px) {
+    #nest-messages {
+        button.ant-btn.ant-btn-primary {
+            width: 90%;
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+}
+@media (min-width: 992px) {
 }

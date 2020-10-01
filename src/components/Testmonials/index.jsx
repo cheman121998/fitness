@@ -10,7 +10,7 @@ class Testmonials extends React.Component {
         return (
             <div className="testmonials content">
                 <div className="container">
-                    <div className="test-intro">
+                    <div className="test-intro title">
                         <h2>Testmonials</h2>
                         <div className="line"></div>
                         <OwlCarousel

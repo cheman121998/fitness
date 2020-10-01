@@ -4,7 +4,7 @@ class Content extends React.Component {
     render() {
         return (
             <div className="content">
-                <div className="container">
+                <div className="container title">
                     <h2>Our Trainer</h2>
                     <div className="line"></div>
                     <p>

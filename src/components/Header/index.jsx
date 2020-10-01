@@ -12,8 +12,8 @@ class Header extends React.Component {
         current: 'hompages',
         visible: false,
     };
-    //showMenu = () => this.setState({ visible: true });
-    //closeMenu = () => this.setState({ visible: false });
+    // showMenu = () => this.setState({ visible: true });
+    // closeMenu = () => this.setState({ visible: false });
     // handleClick = (e) => {
     //     console.log('click ', e);
     //     this.setState({ current: e.key });
@@ -24,7 +24,7 @@ class Header extends React.Component {
             <div className="header">
                 <div className="container">
                     <Row className="menu">
-                        <Tooltip style={{ textAlign: 'center' }} trigger="click" title="Image logo">
+                        <Tooltip className="logo-header" trigger="click" title="Image logo">
                             <img src={logo} alt="logo" />
                             <div className="txt-logo">Fitness Center</div>
                         </Tooltip>

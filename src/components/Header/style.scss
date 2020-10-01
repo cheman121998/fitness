@@ -1,3 +1,4 @@
+$raleway: 'Raleway', sans-serif;
 .header {
     background: rgba(36, 39, 46, 0.86);
     color: white;
@@ -14,12 +15,77 @@
             .menu-item {
                 .ant-menu {
                     background: rgba(112, 112, 112, -0.86);
-                    color: white;
+                    color: #ffffff;
+                    font-family: $raleway;
+                    li.ant-menu-item.ant-menu-item-only-child {
+                        font-weight: bold;
+                        line-height: 29px;
+                        font-size: 15px;
+                        font-family: $raleway;
+                    }
+                    li.ant-menu-item.ant-menu-item-only-child:first {
+                        margin-left: 0;
+                    }
+                    li.ant-menu-item.ant-menu-item-only-child:hover,
+                    li.ant-menu-item.ant-menu-item-only-child:hover {
+                        color: #ff1d6a;
+                    }
 
                     .ant-menu-item-active {
                         color: #ffffff !important;
                         border-bottom: 2px solid #ff1d6a;
                     }
+                }
+            }
+            .menuMobile {
+                //display: none;
+                .btnMenu {
+                    button.btnMenu {
+                        border: none;
+                        font-size: 18px;
+                        background: white;
+                        /* color: white; */
+                    }
+                    ul {
+                        background: black;
+                        color: white;
+                        width: 30vh;
+                        height: 50vh;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .logo-header {
+                text-align: center;
+                img {
+                    object-fit: cover;
+                    width: 44px;
+                    height: 20px;
+                }
+                .txt-logo {
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-weight: bold;
+                    font-family: $raleway;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        .menu {
+            .menu-item {
+                display: none;
+            }
+            .menuMobile {
+                ul {
+                    background: #24272e;
+                    color: #ffffff;
+                    font-size: 18px;
+                    height: 50vh;
+                    width: 30vh;
                 }
             }
         }

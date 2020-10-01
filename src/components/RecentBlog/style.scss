@@ -23,6 +23,9 @@
     .card-left {
         .ant-card {
             background: #13191a;
+            border: none;
+            margin-bottom: 20px;
+            margin-right: 12px;
             .ant-card-cover img {
                 height: 218px;
                 object-fit: cover;
@@ -40,6 +43,7 @@
                 font-family: 'Raleway', sans-serif;
                 font-weight: bold;
                 white-space: break-spaces;
+                font-weight: bold;
             }
             .ant-card-meta-description {
                 font-size: 14px;
@@ -56,6 +60,13 @@
             }
             .ant-card-actions > li:not(:last-child) {
                 border-right: none;
+            }
+        }
+    }
+    .card-right {
+        .ant-card {
+            .ant-card-body {
+                padding: 90px;
             }
         }
     }
