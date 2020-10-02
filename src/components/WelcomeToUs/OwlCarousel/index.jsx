@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import './style.scss';
 import {
-    youtubeWomanCoach,
-    youtubeWomanExcerciseDumbell,
-    youtubeWomanYoga,
+    slideYoutubeBoyGirl,
+    slideYoutubeWomanDumbbell,
+    slideYoutubeWomanYogaSmall,
 } from '../../../assets/images';
 export default class ShowOwlCarousel extends React.Component {
     render() {
@@ -30,13 +30,17 @@ export default class ShowOwlCarousel extends React.Component {
                                     <img
                                         className="img"
                                         alt="img-youtube"
-                                        src={youtubeWomanCoach}
+                                        src={slideYoutubeBoyGirl}
                                     />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/hourse">
-                                    <img className="img" alt="img-youtube" src={youtubeWomanYoga} />
+                                    <img
+                                        className="img"
+                                        alt="img-youtube"
+                                        src={slideYoutubeWomanDumbbell}
+                                    />
                                 </Link>
                             </div>
                             <div>
@@ -44,7 +48,7 @@ export default class ShowOwlCarousel extends React.Component {
                                     <img
                                         className="img"
                                         alt="img-youtube"
-                                        src={youtubeWomanExcerciseDumbell}
+                                        src={slideYoutubeWomanYogaSmall}
                                     />
                                 </Link>
                             </div>
@@ -54,7 +58,7 @@ export default class ShowOwlCarousel extends React.Component {
                                     <img
                                         className="img"
                                         alt="img-youtube"
-                                        src={youtubeWomanCoach}
+                                        src={slideYoutubeWomanYogaSmall}
                                     />
                                 </Link>
                             </div>
@@ -63,13 +67,17 @@ export default class ShowOwlCarousel extends React.Component {
                                     <img
                                         className="img"
                                         alt="img-youtube"
-                                        src={youtubeWomanExcerciseDumbell}
+                                        src={slideYoutubeWomanYogaSmall}
                                     />
                                 </Link>
                             </div>
                             <div>
                                 <Link to="/home">
-                                    <img className="img" alt="img-youtube" src={youtubeWomanYoga} />
+                                    <img
+                                        className="img"
+                                        alt="img-youtube"
+                                        src={slideYoutubeBoyGirl}
+                                    />
                                 </Link>
                             </div>
                         </Router>

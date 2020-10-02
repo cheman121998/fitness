@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import { Card } from 'antd';
-import { cardGirlBoy } from '../../../assets/images';
+
 import { dataCardClasses } from '../../../api/Data';
 
 const ListCart = ({ title, description, image }) => (

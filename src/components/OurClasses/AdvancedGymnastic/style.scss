@@ -1,0 +1,39 @@
+.advanced {
+    .container {
+        color: #ffffff;
+        border: 1px solid #707070;
+        background: #ff1d6a;
+        opacity: 0.86;
+        width: 555px;
+        height: 378px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 25px;
+            color: #ffffff;
+        }
+        .line {
+            border-bottom: 2px solid #ffffff;
+            width: 162px;
+            margin: 26px auto;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: normal;
+        }
+        .btn-advanced {
+            width: 200px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            transition: 0.5s;
+            color: #ff6c2c;
+        }
+    }
+}

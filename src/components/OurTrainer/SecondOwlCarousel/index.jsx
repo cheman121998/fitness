@@ -5,11 +5,11 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './style.scss';
 import {
-    sliderManLift,
-    sliderManExercise,
-    sliderThreeWomen,
-    sliderPullRope,
-    sliderKetteleBell,
+    slideTrainerManLift,
+    slideTrainerTwoWomen,
+    slideTrainerWomanPullRope,
+    slideTrainerWomanBoxer,
+    slideTrainerManFitness,
 } from '../../../assets/images';
 export default class SecondOwlCarousel extends React.Component {
     render() {
@@ -19,33 +19,49 @@ export default class SecondOwlCarousel extends React.Component {
                     <Router>
                         <div>
                             <Link to="/">
-                                <img className="img" alt="img-youtube" src={sliderManLift} />
+                                <img className="img" alt="img-youtube" src={slideTrainerManLift} />
                             </Link>
                         </div>
                         <div>
                             <Link to="/hourse">
-                                <img className="img" alt="img-youtube" src={sliderManExercise} />
+                                <img
+                                    className="img"
+                                    alt="img-youtube"
+                                    src={slideTrainerManFitness}
+                                />
                             </Link>
                         </div>
                         <div>
                             <Link to="/cat">
-                                <img className="img" alt="img-youtube" src={sliderThreeWomen} />
+                                <img className="img" alt="img-youtube" src={slideTrainerTwoWomen} />
                             </Link>
                         </div>
 
                         <div>
                             <Link to="/house">
-                                <img className="img" alt="img-youtube" src={sliderPullRope} />
+                                <img
+                                    className="img"
+                                    alt="img-youtube"
+                                    src={slideTrainerWomanPullRope}
+                                />
                             </Link>
                         </div>
                         <div>
                             <Link to="/sweet">
-                                <img className="img" alt="img-youtube" src={sliderKetteleBell} />
+                                <img
+                                    className="img"
+                                    alt="img-youtube"
+                                    src={slideTrainerWomanBoxer}
+                                />
                             </Link>
                         </div>
                         <div>
                             <Link to="/home">
-                                <img className="img" alt="img-youtube" src={sliderPullRope} />
+                                <img
+                                    className="img"
+                                    alt="img-youtube"
+                                    src={slideTrainerWomanPullRope}
+                                />
                             </Link>
                         </div>
                     </Router>
