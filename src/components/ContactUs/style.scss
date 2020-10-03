@@ -35,6 +35,8 @@
         width: 70%;
         margin: 30px auto;
         z-index: 2;
+        // display: flex;
+        // flex-direction: column;
         .ant-row {
             .ant-col {
                 .ant-input {
@@ -59,65 +61,21 @@
                     width: 100% !important;
                 }
             }
-            // .ant-form-item {
-            //     border: 1px solid #ff6c2c;
-            //     background: transparent;
-            //     margin-right: 24px;
-            //     line-height: 64px;
-            //     input {
-            //         color: #ffffff !important;
-            //         width: 100%;
-            //     }
-            //     ::placeholder {
-            //         color: #bbbbbb;
-            //         font-size: 18px;
-            //         line-height: 22px;
-            //     }
-            //     .ant-cascader-picker-label {
-            //         color: #ffffff;
-            //     }
-            // }
-            // .ant-col {
-            //     width: 50%;
-            //     // .ant-form-item-control-input {
-            //     //     border: 1px solid #ff6c2c;
-            //     //     width: 100%;
-            //     //     background: transparent;
-            //     // }
-            //     input,
-            //     textarea,
-            //     span.ant-cascader-picker {
-            //         background: transparent;
-            //         border: none;
-            //     }
-            //     button.ant-btn.ant-btn-primary {
-            //         background: #ff1d6a;
-            //         width: 418px;
-            //         height: 64px;
-            //         font-size: 20px;
-            //         font-weight: bold;
-            //         border-radius: 2px;
-            //         outline: none;
-            //     }
-            // }
         }
-        .form-des {
-            height: 400px;
+
+        button.ant-btn {
+            width: 418px;
+            height: 64px;
+            border-radius: 2px;
+            background: #ff1d6a;
+            border: none;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 24px;
+            /* margin: auto auto; */
+            transition: 0.5s;
         }
-        // .ant-row.ant-form-item.form-des {
-        //     border: 1px solid #ff6c2c;
-        //     background: transparent;
-        //     margin-right: 24px;
-        //     height: 188px;
-        //     ::placeholder {
-        //         color: #bbbbbb;
-        //         font-size: 18px;
-        //         line-height: 22px;
-        //     }
-        //     textarea#nest-messages_user_introduction {
-        //         color: #ffffff;
-        //     }
-        // }
     }
     .contact {
         color: #ffffff;
@@ -155,7 +113,7 @@
 
                     a {
                         color: #ff1d6a;
-                        font-size: 16px;
+                        font-size: 26x;
                     }
                 }
                 li:hover {
@@ -163,6 +121,10 @@
                 }
             }
         }
+    }
+    #select {
+        border: 1px solid white;
+        background: none;
     }
 }
 @media screen and (max-width: 576px) {

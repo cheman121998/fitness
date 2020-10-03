@@ -9,59 +9,24 @@ import {
     slideTrainerManPower,
     slideTrainerWomanSexy,
 } from '../../../assets/images';
+import { dataCardClasses, dataSlider1Trainer } from '../../../api/Data';
+
+const ListLink = ({ to, alt, image }) => (
+    <div>
+        <Link to={to}>
+            <img className="img" alt={alt} src={image} />
+        </Link>
+    </div>
+);
 export default class FirstOwlCarousel extends React.Component {
     render() {
         return (
             <div className="first-owl-carousel">
                 <OwlCarousel items={3} className="owl-theme" loop nav margin={10}>
                     <Router>
-                        <div>
-                            <Link to="/">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerWomanLift}
-                                />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/hourse">
-                                <img className="img" alt="img-youtube" src={slideTrainerManPower} />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/cat">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerWomanSexy}
-                                />
-                            </Link>
-                        </div>
-
-                        <div>
-                            <Link to="/house">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerWomanLift}
-                                />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/sweet">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerWomanSexy}
-                                />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/home">
-                                <img className="img" alt="img-youtube" src={slideTrainerManPower} />
-                            </Link>
-                        </div>
+                        {dataSlider1Trainer.slice(0, 3).map((e, i) => (
+                            <ListLink key={i} to={e.to} alt={e.alt} src={e.src} />
+                        ))}
                     </Router>
                 </OwlCarousel>
             </div>

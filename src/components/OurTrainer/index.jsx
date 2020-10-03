@@ -5,8 +5,28 @@ import { Row, Col } from 'antd';
 import KatlimineCore from './KatlimineCore';
 import FirstOwlCarousel from './FirstOwlCarousel';
 import SecondOwlCarousel from './SecondOwlCarousel';
+import { dataSlider1Trainer } from '../../api/Data';
+
+const ran = (max) => Math.floor(Math.random() * Math.floor(max));
 
 export default class OurTrainer extends React.Component {
+    state = {
+        listSliders: [],
+    };
+
+    componentDidMount() {
+        this.randomSlider();
+    }
+
+    randomSlider = () => {
+        let number = ran(dataSlider1Trainer.length - 3);
+        let newArray = [];
+
+        for (let i = number; i < number + 3; i++) {
+            newArray.push(dataSlider1Trainer[i]);
+        }
+        this.setState({ listSliders: newArray });
+    };
     render() {
         return (
             <div className="our-trainer">

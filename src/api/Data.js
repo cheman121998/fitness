@@ -8,6 +8,14 @@ import {
     cardClassesManMuscular,
     cardClassesWomanDumbbell,
     cardClassesWomanLift,
+    slideTrainerManFitness,
+    slideTrainerManLift,
+    slideTrainerManPower,
+    slideTrainerTwoWomen,
+    slideTrainerWomanLift,
+    slideTrainerWomanBoxer,
+    slideTrainerWomanPullRope,
+    slideTrainerWomanSexy,
 } from './../assets/images';
 
 export const dataCard = [
@@ -125,5 +133,75 @@ export const dataCardClasses = [
         title: 'Minh Minh',
         description: 'Trained under best trainers',
         image: { cardClassesWomanDumbbell },
+    },
+];
+
+export const dataSlider1Trainer = [
+    {
+        id: 1,
+        to: '/cat',
+        alt: 'Describe cat',
+        image: { slideTrainerWomanLift },
+    },
+    {
+        id: 2,
+        to: '/dog',
+        alt: 'Describe cat',
+        image: { slideTrainerManPower },
+    },
+    {
+        id: 3,
+        to: '/pig',
+        alt: 'Describe cat',
+        image: { slideTrainerWomanSexy },
+    },
+    {
+        id: 4,
+        to: '/cat',
+        alt: 'Describe cat',
+        image: { slideTrainerWomanLift },
+    },
+    {
+        id: 5,
+        to: '/lion',
+        alt: 'Describe cat',
+        image: { slideTrainerWomanSexy },
+    },
+    {
+        id: 6,
+        to: '/dragon',
+        alt: 'Describe cat',
+        image: { slideTrainerManPower },
+    },
+];
+
+export const dataDescription = [
+    {
+        id: 1,
+        desc:
+            ' Lorem ipsum dolor sit amet, consetetur sadipscing elitr diam nonumy eirmod tempor invidunt ut labore et dolore magn aliquyam erat, sed diam voluptua. At vero',
+    },
+    {
+        id: 2,
+        desc:
+            ' litr diam nonumy eirmod tempor invidunt ut labore et dolore magn aliquyam erat, sed diam voluptua. At vero',
+    },
+    {
+        id: 3,
+        desc:
+            ' Lorem ipsum dolor sit amet, consetr diam nonumy eirmod tempor invidunt ut labore et dolore magn aliquyam erat, sed diam voluptua. At vero',
+    },
+    {
+        id: 4,
+        desc: ' Lorem ipsum dolor sit a diam voluptua. At vero',
+    },
+    {
+        id: 5,
+        desc: ' Lorem ipsum dolor sit amet, consetetur sadipscing eliuptua. At vero',
+    },
+    {
+        id: 6,
+        desc:
+            ' Lorem ipsum dolor sit amet, consetetur sm nonumy eirmod tempor invidunt ut labore et dolore magn aliquyam erat, sed diam voluptua. At vero',
     },
 ];

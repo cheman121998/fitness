@@ -1,6 +1,8 @@
 .recent-blog {
     background: #24272e;
     padding: 128px 0;
+    font-family: 'Raleway', sans-serif;
+
     .title {
         display: flex;
         align-items: center;
@@ -65,8 +67,51 @@
     }
     .card-right {
         .ant-card {
+            border: none;
             .ant-card-body {
-                padding: 90px;
+                background: #13191a;
+
+                .content-blog {
+                    padding: 90px;
+                    position: relative;
+                    color: #ffffff;
+                    .title-card {
+                        font-size: 30px;
+                        line-height: 42px;
+                        color: #ff6c2c;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: bold;
+                        white-space: break-spaces;
+                        font-weight: bold;
+                    }
+                    .avt {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        border: 1px solid #ff6c2c;
+                        position: absolute;
+                        right: 0;
+                    }
+                    .txt-blog {
+                        font-size: 14px;
+                        font-weight: normal;
+                        line-height: 24px;
+                        margin-top: 50px;
+                        .divide {
+                            column-count: 2;
+                            .line {
+                                border-bottom: 2px solid #ff6c2c;
+                                width: 100%;
+                                margin: 40px 0;
+                            }
+                            .quote {
+                                font-style: italic;
+                                text-align-last: end;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -25,6 +25,7 @@ export default class ContactUs extends React.Component {
                         </Col>
                         <Col span={12}>
                             <Select
+                                id="select"
                                 defaultValue="lucy"
                                 style={{ width: 120 }}
                                 onChange={handleChange}
@@ -40,6 +41,7 @@ export default class ContactUs extends React.Component {
                     </Row>
                     <Form.Item name={['user', 'introduction']}>
                         <Input.TextArea
+                            style={{ height: '180px' }}
                             className="form-des"
                             placeholder="Write Your Message Here..."
                         />

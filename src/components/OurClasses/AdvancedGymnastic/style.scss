@@ -1,4 +1,8 @@
 .advanced {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
     .container {
         color: #ffffff;
         border: 1px solid #707070;
@@ -34,6 +38,7 @@
             outline: none;
             transition: 0.5s;
             color: #ff6c2c;
+            box-shadow: 3px 10px 8px rgba(0, 0, 0, 0.3);
         }
     }
 }
