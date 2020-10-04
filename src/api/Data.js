@@ -9,13 +9,8 @@ import {
     cardClassesManMuscular,
     cardClassesWomanDumbbell,
     cardClassesWomanLift,
-    slideTrainerManFitness,
-    slideTrainerManLift,
     slideTrainerManPower,
-    slideTrainerTwoWomen,
     slideTrainerWomanLift,
-    slideTrainerWomanBoxer,
-    slideTrainerWomanPullRope,
     slideTrainerWomanSexy,
 } from './../assets/images';
 
