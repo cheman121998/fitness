@@ -35,3 +35,91 @@ $raleway: 'Raleway', sans-serif;
         color: #ff6c2c;
     }
 }
+.video-react-controls-enabled.video-react-paused.video-react-fluid.video-react-user-inactive.video-react {
+    padding: 0 !important;
+}
+.video-react-controls-enabled.video-react-playing.video-react-fluid.video-react-user-inactive.video-react {
+    padding: 0 !important;
+}
+.video-react-controls-enabled.video-react-paused.video-react-fluid.video-react-user-inactive.video-react {
+    padding: 0 !important;
+}
+.video-react-controls-enabled.video-react-playing.video-react-fluid.video-react-user-inactive.video-react {
+    padding: 0 !important;
+}
+@media screen and (max-width: 576px) {
+    .content.welcome-content {
+        h2 {
+            font-size: 40px;
+        }
+        p {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .content.welcome-content {
+        text-align: center;
+        margin-top: 50px;
+        .line {
+            margin: 40px auto;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        p {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .content.welcome-content {
+        text-align: center;
+        margin-top: 50px;
+        .line {
+            margin: 40px auto;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        p {
+            width: 80%;
+            font-size: 18px;
+            margin: 30px auto;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .content.welcome-content {
+        text-align: left;
+
+        .line {
+            margin: 40px 0;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        p {
+            width: 80%;
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .content.welcome-content {
+        text-align: left;
+
+        .line {
+            margin: 40px 0;
+        }
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            width: 578px;
+            font-size: 20px;
+        }
+    }
+}

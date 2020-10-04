@@ -35,10 +35,10 @@ class WelcomeToUS extends React.Component {
                 <div className="container">
                     <Cards />
                     <Row>
-                        <Col xs={24} md={12} lg={12}>
+                        <Col xs={24} md={24} lg={12}>
                             <Content />
                         </Col>
-                        <Col xs={24} md={12} lg={12}>
+                        <Col xs={24} md={24} lg={12}>
                             <Video />
                         </Col>
                     </Row>

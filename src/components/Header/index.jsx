@@ -5,21 +5,21 @@ import { Menu, Row, Tooltip } from 'antd';
 import { logo } from '../../assets/images';
 
 const menu = (key, label) => <Menu.Item key={key}>{label}</Menu.Item>;
-//const menuMobile = (key, label) => <Menu.Item key={key}>{label}</Menu.Item>;
+const menuMobile = (key, label) => <Menu.Item key={key}>{label}</Menu.Item>;
 
 class Header extends React.Component {
     state = {
         current: 'hompages',
         visible: false,
     };
-    // showMenu = () => this.setState({ visible: true });
-    // closeMenu = () => this.setState({ visible: false });
+    showMenu = () => this.setState({ visible: true });
+    closeMenu = () => this.setState({ visible: false });
     // handleClick = (e) => {
     //     console.log('click ', e);
     //     this.setState({ current: e.key });
     // };
     render() {
-        const { current } = this.state;
+        const { visible, current } = this.state;
         return (
             <div className="header">
                 <div className="container">
@@ -42,7 +42,7 @@ class Header extends React.Component {
                                 {menu('contact', 'CONTACTS')}
                             </Menu>
                         </div>
-                        {/* <div className="menuMobile">
+                        <div className="menuMobile">
                             <button className="btnMenu" onClick={this.showMenu}>
                                 <ion-icon name="menu-outline"></ion-icon>
                             </button>
@@ -59,11 +59,12 @@ class Header extends React.Component {
                                 {menuMobile('news', 'NEWS')}
                                 {menuMobile('contact', 'CONTACTS')}
                             </Menu>
-                        </div> */}
+                        </div>
                     </Row>
                 </div>
             </div>
         );
     }
 }
+Header.propTypes = {};
 export default Header;

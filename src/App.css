@@ -49,3 +49,29 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+@media screen and (max-width: 576px) {
+    .content h2 {
+        font-size: 40px;
+    }
+    .content p {
+        font-size: 18px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 992px) {
+    .content h2 {
+        font-size: 50px;
+    }
+    .content p {
+        font-size: 20px;
+        width: 80%;
+    }
+}

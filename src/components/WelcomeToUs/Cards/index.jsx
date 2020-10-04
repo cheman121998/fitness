@@ -5,10 +5,12 @@ import { dataCard } from '../../../api/Data';
 
 const { Meta } = Card;
 const ListCard = ({ title, description, background, price, mask }) => (
-    <Col xs={{ span: 5, offset: 1 }} lg={{ span: 6, offset: 2 }}>
+    <Col xs={24} md={24} lg={8}>
         <Card
             style={
-                ({ width: '30%' }, { background: { background } }, { backgroundColor: { mask } })
+                ({ width: '30%' },
+                { backgroundColor: { mask } },
+                { background: `url(${background})` })
             }
         >
             <Meta title={title} description={description} />
@@ -22,6 +24,7 @@ class Cards extends React.Component {
             <div className="cards">
                 <div className="container">
                     <Row>
+                        {console.log('dataCard', dataCard)}
                         {dataCard.slice(0, 3).map((e, i) => (
                             <ListCard
                                 key={i}

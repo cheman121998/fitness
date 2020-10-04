@@ -50,3 +50,48 @@
         }
     }
 }
+@media screen and (max-width: 576px) {
+    .cards {
+        .group-card {
+            .ant-card {
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .cards {
+        .group-card {
+            .ant-card {
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .cards {
+        .group-card {
+            .ant-card {
+                width: 50% !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .cards {
+        .group-card {
+            .ant-card {
+                width: 33% !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cards {
+        .group-card {
+            .ant-card {
+                width: 33% !important;
+            }
+        }
+    }
+}

@@ -6,11 +6,11 @@
             height: 200px;
             width: 340px;
             border: none;
-            margin-top: -150%;
+            margin-top: -100%;
             .ant-card-body {
                 padding: 40px;
                 .ant-card-meta-title {
-                    font-weight: 300;
+                    font-weight: bold;
                     font-size: 20px;
                     line-height: 25px;
                     width: 156px;
@@ -38,8 +38,50 @@
         }
     }
 }
-@media (min-width: 992px) {
-    .ant-col-lg-offset-2 {
-        margin: 0 auto;
+@media screen and (max-width: 576px) {
+    .cards {
+        .container {
+            padding: 0;
+            .ant-card {
+                margin: 30px auto;
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .cards {
+        .container {
+            padding: 0;
+            .ant-card {
+                margin: 30px auto;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .cards {
+        .container {
+            .ant-card {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .cards {
+        .container {
+            .ant-card {
+                margin-top: -120%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cards {
+        .container {
+            .ant-card {
+                margin-top: -75%;
+            }
+        }
     }
 }

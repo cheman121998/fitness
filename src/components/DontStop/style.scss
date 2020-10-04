@@ -4,6 +4,7 @@
     background-size: cover;
     background-attachment: scroll;
     z-index: 3;
+    background-position: center;
     // min-height: 1050px;
 }
 .dont-stop {
@@ -97,6 +98,102 @@
                     font-family: 'Raleway', sans-serif;
                     line-height: 30px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #dont-stop {
+        height: 100vh;
+    }
+    .dont-stop {
+        display: block;
+        .group-icon {
+            height: auto;
+            ul {
+                display: flex;
+            }
+        }
+        .intro-dont-stop {
+            width: 100%;
+            height: 80vh;
+            padding: 40px;
+            h1 {
+                font-size: 40px;
+                width: 80%;
+                line-height: 50px;
+            }
+            p {
+                width: 100%;
+            }
+            .btn-group {
+                display: block;
+                margin-bottom: 10px;
+                .btn-get-started {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                }
+                .youtube {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .dont-stop {
+        height: 100vh;
+        .intro-dont-stop {
+            padding: 40px;
+            width: 80%;
+            height: auto;
+            h1 {
+                font-size: 58px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .dont-stop {
+        height: 100vh;
+        .intro-dont-stop {
+            padding: 80px;
+            width: 80%;
+            height: auto;
+            h1 {
+                font-size: 62px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .dont-stop {
+        height: 100vh;
+        .intro-dont-stop {
+            padding: 80px;
+            width: 80%;
+            height: auto;
+            h1 {
+                font-size: 62px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    #dont-stop {
+        height: 150vh;
+    }
+    .dont-stop {
+        height: 150vh;
+        .intro-dont-stop {
+            width: 928px;
+            height: 448px;
+            padding-left: 120px;
+            h1 {
+                font-size: 68px;
             }
         }
     }

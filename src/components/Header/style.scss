@@ -38,21 +38,24 @@ $raleway: 'Raleway', sans-serif;
                 }
             }
             .menuMobile {
-                //display: none;
-                .btnMenu {
-                    button.btnMenu {
-                        border: none;
-                        font-size: 18px;
-                        background: white;
-                        /* color: white; */
-                    }
-                    ul {
-                        background: black;
-                        color: white;
-                        width: 30vh;
-                        height: 50vh;
-                        font-size: 20px;
-                    }
+                display: none;
+                background: grey;
+                color: white;
+                width: 30vh;
+                height: 50vh;
+                font-size: 20px;
+
+                button.btnMenu {
+                    width: 16px;
+                    height: 16px;
+                    transition: 0.3s ease-in;
+                    background: none;
+                    outline: none;
+                    border: none;
+                }
+                ul {
+                    background: grey;
+                    border: none;
                 }
             }
             .logo-header {
@@ -75,11 +78,13 @@ $raleway: 'Raleway', sans-serif;
 
 @media screen and (max-width: 576px) {
     .header {
+        padding: 10px 0;
         .menu {
             .menu-item {
                 display: none;
             }
             .menuMobile {
+                display: block;
                 ul {
                     background: #24272e;
                     color: #ffffff;

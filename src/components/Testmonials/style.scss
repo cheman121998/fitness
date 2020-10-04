@@ -40,17 +40,6 @@
             #owl-theme1.owl-theme .owl-dots .owl-dot {
                 display: none;
             }
-            #owl-theme1 .owl-carousel .owl-nav button.owl-prev,
-            #owl-theme1 .owl-carousel .owl-nav button.owl-next {
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background: #ff1d6a;
-                outline: none;
-            }
 
             #owl-theme2 {
                 margin: 16px auto;
@@ -90,20 +79,13 @@
                         }
                     }
                 }
+                .owl-carousel .owl-nav button.owl-prev,
+                .owl-carousel .owl-nav button.owl-next {
+                    display: none !important;
+                }
             }
             #owl-theme2.owl-theme .owl-dots .owl-dot {
                 display: block;
-            }
-            .owl-carousel .owl-nav button.owl-prev,
-            .owl-carousel .owl-nav button.owl-next {
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background: #ff1d6a;
-                outline: none;
             }
         }
     }

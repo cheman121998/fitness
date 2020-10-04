@@ -1,11 +1,30 @@
 .first-owl-carousel {
     .owl-carousel {
         .owl-stage-outer {
-            .owl-item {
-                img:first-child(2) {
+            .owl-stage {
+                .owl-item {
+                    object-fit: cover;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                //First
+                .owl-item:not(.active) + .active {
                     width: 442px;
                     height: 564px;
-                    object-fit: cover;
+                }
+                //Second
+                .owl-item.active + .active {
+                    width: 342px;
+                    height: 464px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                //All active (3rd)
+                .owl-item.active {
+                    width: 242px;
+                    height: 364px;
                 }
             }
         }
