@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a1689a99279b45ed411c4f0aeb0c431c",
+    "revision": "920b1bbe8789ed03664dd6665e11c735",
     "url": "/fitness/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fitness/static/css/2.67faa847.chunk.css"
   },
   {
-    "revision": "38879e34be8544b2ddac",
-    "url": "/fitness/static/css/main.5b19d6f8.chunk.css"
+    "revision": "7b782a60bd120bdbfaaa",
+    "url": "/fitness/static/css/main.1dd497a6.chunk.css"
   },
   {
     "revision": "aac0aaeca4cddc697507",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fitness/static/js/2.6cfd5c3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38879e34be8544b2ddac",
-    "url": "/fitness/static/js/main.9739de1b.chunk.js"
+    "revision": "7b782a60bd120bdbfaaa",
+    "url": "/fitness/static/js/main.4f265705.chunk.js"
   },
   {
     "revision": "bf9460b2a94932e2a696",
