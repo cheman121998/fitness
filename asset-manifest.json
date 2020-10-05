@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/fitness/static/css/main.1dd497a6.chunk.css",
-    "main.js": "/fitness/static/js/main.4f265705.chunk.js",
-    "main.js.map": "/fitness/static/js/main.4f265705.chunk.js.map",
+    "main.css": "/fitness/static/css/main.8e9f05f8.chunk.css",
+    "main.js": "/fitness/static/js/main.3fc82acf.chunk.js",
+    "main.js.map": "/fitness/static/js/main.3fc82acf.chunk.js.map",
     "runtime-main.js": "/fitness/static/js/runtime-main.fb575ab4.js",
     "runtime-main.js.map": "/fitness/static/js/runtime-main.fb575ab4.js.map",
     "static/css/2.67faa847.chunk.css": "/fitness/static/css/2.67faa847.chunk.css",
-    "static/js/2.6cfd5c3e.chunk.js": "/fitness/static/js/2.6cfd5c3e.chunk.js",
-    "static/js/2.6cfd5c3e.chunk.js.map": "/fitness/static/js/2.6cfd5c3e.chunk.js.map",
+    "static/js/2.1a1550c8.chunk.js": "/fitness/static/js/2.1a1550c8.chunk.js",
+    "static/js/2.1a1550c8.chunk.js.map": "/fitness/static/js/2.1a1550c8.chunk.js.map",
     "index.html": "/fitness/index.html",
-    "precache-manifest.18295e05e47d894aa3fa9c99e1c609e4.js": "/fitness/precache-manifest.18295e05e47d894aa3fa9c99e1c609e4.js",
+    "precache-manifest.23fcc23541194295d55bf28173cbd448.js": "/fitness/precache-manifest.23fcc23541194295d55bf28173cbd448.js",
     "service-worker.js": "/fitness/service-worker.js",
     "static/css/2.67faa847.chunk.css.map": "/fitness/static/css/2.67faa847.chunk.css.map",
-    "static/css/main.1dd497a6.chunk.css.map": "/fitness/static/css/main.1dd497a6.chunk.css.map",
-    "static/js/2.6cfd5c3e.chunk.js.LICENSE.txt": "/fitness/static/js/2.6cfd5c3e.chunk.js.LICENSE.txt",
+    "static/css/main.8e9f05f8.chunk.css.map": "/fitness/static/css/main.8e9f05f8.chunk.css.map",
+    "static/js/2.1a1550c8.chunk.js.LICENSE.txt": "/fitness/static/js/2.1a1550c8.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/fitness/static/media/bg-main.24f8b586.jpg",
     "static/media/card-blog-maraton.jpg": "/fitness/static/media/card-blog-maraton.96ec0225.jpg",
     "static/media/card-blog-woman-boxer.jpg": "/fitness/static/media/card-blog-woman-boxer.9cf58877.jpg",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.fb575ab4.js",
     "static/css/2.67faa847.chunk.css",
-    "static/js/2.6cfd5c3e.chunk.js",
-    "static/css/main.1dd497a6.chunk.css",
-    "static/js/main.4f265705.chunk.js"
+    "static/js/2.1a1550c8.chunk.js",
+    "static/css/main.8e9f05f8.chunk.css",
+    "static/js/main.3fc82acf.chunk.js"
   ]
 }
