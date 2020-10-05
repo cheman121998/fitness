@@ -28,3 +28,25 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .second-owl-carousel {
+        margin: 50px auto;
+        margin-bottom: 200px;
+
+        .owl-theme {
+            .owl-nav {
+                left: 10px;
+                right: 10px;
+                top: 0;
+                bottom: 0;
+                font-size: 30px;
+            }
+        }
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel .owl-nav button.owl-next {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

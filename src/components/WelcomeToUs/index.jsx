@@ -23,8 +23,6 @@ class WelcomeToUS extends React.Component {
 
         for (let i = number; i < number + 3; i++) {
             newArray.push(dataCard[i]);
-            //là viết code ở đây phải không,
-            //là chi mà chán ri
         }
         this.setState({ listCards: newArray });
     };

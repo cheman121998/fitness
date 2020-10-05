@@ -62,6 +62,24 @@
                 }
             }
         }
+        .ant-select {
+            background: transparent;
+            border: 1px solid #ff6c2c;
+            height: 64px;
+            color: #ff6c2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ant-select:hover .ant-select-selector {
+            background: transparent;
+            border: 1px solid #ff6c2c;
+            height: 64px;
+            color: #ff6c2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         button.ant-btn {
             width: 418px;
@@ -128,6 +146,14 @@
     }
 }
 @media screen and (max-width: 576px) {
+    #contact-us .ant-form button.ant-btn {
+        width: 100%;
+    }
+    .contact {
+        span {
+            font-size: 12px;
+        }
+    }
     #nest-messages {
         button.ant-btn.ant-btn-primary {
             width: 90%;

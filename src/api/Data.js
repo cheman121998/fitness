@@ -1,4 +1,3 @@
-//Đây là file data của tui hấy
 import {
     cardWcWomanLift,
     cardWcWomanStanding,
@@ -12,6 +11,9 @@ import {
     slideTrainerManPower,
     slideTrainerWomanLift,
     slideTrainerWomanSexy,
+    cardBlogMaraton,
+    cardBlogWomanBoxer,
+    cardBlogWomanPush,
 } from './../assets/images';
 
 export const dataCard = [
@@ -199,5 +201,44 @@ export const dataDescription = [
         id: 6,
         desc:
             ' Lorem ipsum dolor sit amet, consetetur sm nonumy eirmod tempor invidunt ut labore et dolore magn aliquyam erat, sed diam voluptua. At vero',
+    },
+];
+
+export const dataCardBlog = [
+    {
+        id: 1,
+        to: '/cat',
+        alt: 'Describe cat',
+        image: cardBlogMaraton,
+        title: 'This Harvard Student Ran 70 Miles Back to College',
+        description:
+            'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.',
+    },
+    {
+        id: 2,
+        to: '/dog',
+        alt: 'Describe cat',
+        title: 'Female Boxers Describe What It’s Like to Take a Punch',
+        image: cardBlogWomanBoxer,
+        description:
+            'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.',
+    },
+    {
+        id: 3,
+        to: '/pig',
+        title: 'This Harvard Student Ran 70 Miles Back to College',
+        alt: 'Describe cat',
+        image: cardBlogMaraton,
+        description:
+            'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.',
+    },
+    {
+        id: 4,
+        to: '/cat',
+        alt: 'Describe cat',
+        title: 'Female Boxers Describe What It’s Like to Take a Punch',
+        image: cardBlogWomanBoxer,
+        description:
+            'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.',
     },
 ];

@@ -116,3 +116,96 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .recent-blog {
+        .card-right {
+            .ant-card {
+                .ant-card-body {
+                    .content-blog {
+                        padding: 0;
+                        position: relative;
+                        color: #ffffff;
+                        .title-card {
+                            font-size: 20px;
+                        }
+                        .txt-blog .divide {
+                            column-count: 1;
+                            overflow: auto;
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) {
+    .recent-blog {
+        .card-right {
+            .ant-card {
+                .ant-card-body {
+                    .content-blog {
+                        padding: 0;
+                        position: relative;
+                        color: #ffffff;
+                        .title-card {
+                            font-size: 20px;
+                        }
+                        .txt-blog .divide {
+                            column-count: 1;
+                            overflow: auto;
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .recent-blog {
+        .card-right {
+            .ant-card {
+                .ant-card-body {
+                    .content-blog {
+                        padding: 0;
+                        position: relative;
+                        color: #ffffff;
+                        .title-card {
+                            font-size: 26px;
+                        }
+                        .txt-blog .divide {
+                            column-count: 2;
+                            overflow: auto;
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .recent-blog {
+        .card-right {
+            .ant-card {
+                .ant-card-body {
+                    .content-blog {
+                        padding: 0;
+                        position: relative;
+                        color: #ffffff;
+                        .title-card {
+                            font-size: 30px;
+                        }
+                        .txt-blog .divide {
+                            column-count: 2;
+                            overflow: auto;
+                            height: 60vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

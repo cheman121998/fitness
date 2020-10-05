@@ -4,7 +4,6 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { avt } from '../../assets/images';
-import { Avatar } from 'antd';
 
 class Testmonials extends React.Component {
     render() {
@@ -57,6 +56,7 @@ class Testmonials extends React.Component {
                             loop
                             margin={10}
                             nav
+                            autoplay
                         >
                             <div className="item">
                                 <img src={avt} alt="avt" />

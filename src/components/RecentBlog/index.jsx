@@ -1,12 +1,45 @@
 import React from 'react';
 import './style.scss';
-import { Row, Col, Card, Avatar } from 'antd';
+import { Row, Col, Card } from 'antd';
 import { GlobalOutlined, ClockCircleOutlined } from '@ant-design/icons';
-import { avt } from '../../assets/images';
+import { avt, cardBlogWomanPush } from '../../assets/images';
+import { dataCardBlog } from '../../api/Data';
 
 const { Meta } = Card;
-
+const ListCard = ({ image, alt, title, description }) => (
+    <Card
+        style={({ width: '100%' }, { padding: '30px' })}
+        cover={<img alt={alt} src={image} />}
+        actions={[
+            <GlobalOutlined label="Long Name Here" key="global" />,
+            <ClockCircleOutlined label="1h ago" key="edit" />,
+        ]}
+    >
+        <Meta title={title} description={description} />
+    </Card>
+);
+console.log('List card', ListCard);
+console.log('dataCardBlog', dataCardBlog);
+const ran = (max) => Math.floor(Math.random() * Math.floor(max));
 export default class RecentBlog extends React.Component {
+    state = {
+        listCards: [],
+    };
+
+    componentDidMount() {
+        this.randomCard();
+    }
+
+    randomCard = () => {
+        let number = ran(dataCardBlog.length - 2);
+        let newArray = [];
+
+        for (let i = number; i < number + 3; i++) {
+            newArray.push(dataCardBlog[i]);
+        }
+        this.setState({ listCards: newArray });
+    };
+
     render() {
         return (
             <div className="recent-blog">
@@ -16,53 +49,22 @@ export default class RecentBlog extends React.Component {
                         <div className="line"></div>
                     </div>
                     <Row gutter={16}>
-                        <Col className="gutter-row card-left" span={8}>
-                            <Card
-                                style={({ width: '100%' }, { padding: '30px' })}
-                                cover={
-                                    <img
-                                        alt="example"
-                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                                    />
-                                }
-                                actions={[
-                                    <GlobalOutlined label="Long Name Here" key="global" />,
-                                    <ClockCircleOutlined label="1h ago" key="edit" />,
-                                ]}
-                            >
-                                <Meta
-                                    title="This Harvard Student Ran 70 Miles Back to College"
-                                    description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis."
+                        <Col xs={24} md={24} lg={8} className="gutter-row card-left" span={8}>
+                            {dataCardBlog.slice(0, 2).map((e, i) => (
+                                <ListCard
+                                    key={i}
+                                    to={e.to}
+                                    alt={e.alt}
+                                    src={e.image}
+                                    title={e.title}
+                                    description={e.description}
                                 />
-                            </Card>
-                            <Card
-                                style={({ width: '100%' }, { padding: '30px' })}
-                                cover={
-                                    <img
-                                        alt="example"
-                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                                    />
-                                }
-                                actions={[
-                                    <GlobalOutlined title="Long Name Here" key="global" />,
-                                    <ClockCircleOutlined title="1h ago" key="edit" />,
-                                ]}
-                            >
-                                <Meta
-                                    title="Female Boxers Describe What It’s Like to Take a Punch"
-                                    description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis."
-                                />
-                            </Card>
+                            ))}
                         </Col>
-                        <Col className="gutter-row card-right" span={16}>
+                        <Col xs={24} md={24} lg={16} className="gutter-row card-right" span={16}>
                             <Card
                                 style={{ width: '100%' }}
-                                cover={
-                                    <img
-                                        alt="example"
-                                        src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-                                    />
-                                }
+                                cover={<img alt="example" src={cardBlogWomanPush} />}
                             >
                                 <div className="content-blog">
                                     <Row>

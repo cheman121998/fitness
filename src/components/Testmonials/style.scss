@@ -21,10 +21,21 @@
                 top: 0%;
                 color: #ffffff;
                 font-size: 60px;
+                button {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: #ff1d6a;
+                    outline: none;
+                }
             }
             #owl-theme1.owl-theme {
                 text-align: center;
                 width: 70%;
+
                 .item {
                     position: relative;
                     div {
@@ -37,6 +48,7 @@
                     }
                 }
             }
+
             #owl-theme1.owl-theme .owl-dots .owl-dot {
                 display: none;
             }
@@ -88,5 +100,34 @@
                 display: block;
             }
         }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .testmonials {
+        .container {
+            .test-intro {
+                #owl-theme1.owl-theme {
+                    .item {
+                        div {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                #owl-theme2 .owl-item.active .item h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .testmonials {
+        height: 60vh;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .testmonials {
+        height: 100vh;
     }
 }
