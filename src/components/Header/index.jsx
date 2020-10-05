@@ -14,10 +14,10 @@ class Header extends React.Component {
     };
     showMenu = () => this.setState({ visible: true });
     closeMenu = () => this.setState({ visible: false });
-    // handleClick = (e) => {
-    //     console.log('click ', e);
-    //     this.setState({ current: e.key });
-    // };
+    handleClick = (e) => {
+        console.log('click ', e);
+        this.setState({ current: e.key });
+    };
     render() {
         const { visible, current } = this.state;
         return (
@@ -49,7 +49,7 @@ class Header extends React.Component {
                             <Menu
                                 title="Menu"
                                 placement="right"
-                                // closable={false}
+                                closable={false}
                                 onClose={this.closeMenu}
                                 visible={this.state.visible}
                             >

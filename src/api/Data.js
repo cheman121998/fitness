@@ -23,7 +23,7 @@ export const dataCard = [
         description: 'Trained under best trainers',
         background: cardWcWomanLift,
         price: 99432,
-        mask: 'rgba(95, 169, 180, 0.75)',
+        backgroundColor: 'rgba(95, 169, 180, 0.75)',
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ export const dataCard = [
         description: 'Trained under best trainers',
         background: cardWcWomanStanding,
         price: 99,
-        mask: 'rgba(148, 91, 159, 0.75)',
+        backgroundColor: 'rgba(148, 91, 159, 0.75)',
     },
     {
         id: 3,
@@ -39,7 +39,7 @@ export const dataCard = [
         description: 'Trained under best trainers',
         background: cardWcWomanSexy,
         price: 99,
-        mask: 'rgba(142, 204, 59, 0.75)',
+        backgroundColor: 'rgba(142, 204, 59, 0.75)',
     },
     {
         id: 4,
@@ -47,7 +47,7 @@ export const dataCard = [
         description: 'Trained under best trainers',
         background: cardWcWomanLift,
         price: 999,
-        mask: 'rgba(0, 0, 0, 0.75)',
+        backgroundColor: 'rgba(0, 0, 0, 0.75)',
     },
     {
         id: 5,
@@ -55,7 +55,7 @@ export const dataCard = [
         description: 'Trained under best trainers',
         background: cardWcWomanStanding,
         price: 9999,
-        mask: 'rgba(148, 91, 159, 0.75)',
+        backgroundColor: 'rgba(148, 91, 159, 0.75)',
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ export const dataCard = [
         description: 'Trained under best trainers',
         background: cardWcWomanSexy,
         price: 999999,
-        mask: 'rgba(142, 204, 59, 0.75)',
+        backgroundColor: 'rgba(142, 204, 59, 0.75)',
     },
 ];
 

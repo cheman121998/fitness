@@ -4,14 +4,11 @@ import { Card, Button, Row, Col } from 'antd';
 import { dataCard } from '../../../api/Data';
 
 const { Meta } = Card;
-const ListCard = ({ title, description, background, price, mask }) => (
+const ListCard = ({ title, description, background, price, backgroundColor }) => (
     <Col xs={24} md={24} lg={8}>
         <Card
-            style={
-                ({ width: '30%' },
-                { backgroundColor: { mask } },
-                { background: `url(${background})` })
-            }
+            style={({ width: '30%' }, { background: `url(${background})` })}
+            bodyStyle={{ backgroundColor: { backgroundColor } }}
         >
             <Meta title={title} description={description} />
             <Button>${price}*/M</Button>
@@ -32,7 +29,7 @@ class Cards extends React.Component {
                                 description={e.description}
                                 background={e.background}
                                 price={e.price}
-                                backgroundColor={e.mask}
+                                backgroundColor={e.backgroundColor}
                             />
                         ))}
                     </Row>
