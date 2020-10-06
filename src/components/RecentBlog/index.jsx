@@ -6,18 +6,21 @@ import { avt, cardBlogWomanPush } from '../../assets/images';
 import { dataCardBlog } from '../../api/Data';
 
 const { Meta } = Card;
-const ListCard = ({ image, alt, title, description }) => (
-    <Card
-        style={({ width: '100%' }, { padding: '30px' })}
-        cover={<img alt={alt} src={image} />}
-        actions={[
-            <GlobalOutlined label="Long Name Here" key="global" />,
-            <ClockCircleOutlined label="1h ago" key="edit" />,
-        ]}
-    >
-        <Meta title={title} description={description} />
-    </Card>
-);
+const ListCard = ({ image, alt, title, description }) => {
+    console.log(image);
+    return (
+        <Card
+            style={({ width: '100%' }, { padding: '30px' })}
+            cover={<img alt={alt} src={image} />}
+            actions={[
+                <GlobalOutlined label="Long Name Here" key="global" />,
+                <ClockCircleOutlined label="1h ago" key="edit" />,
+            ]}
+        >
+            <Meta title={title} description={description} />
+        </Card>
+    );
+};
 console.log('List card', ListCard);
 console.log('dataCardBlog', dataCardBlog);
 const ran = (max) => Math.floor(Math.random() * Math.floor(max));
@@ -55,7 +58,7 @@ export default class RecentBlog extends React.Component {
                                     key={i}
                                     to={e.to}
                                     alt={e.alt}
-                                    src={e.image}
+                                    image={e.image} //đây truyền src, mà ở trên dùng image hay hè, đâu để em check lại :')))
                                     title={e.title}
                                     description={e.description}
                                 />

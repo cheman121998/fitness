@@ -1,20 +1,10 @@
 .welcome-carousel {
-    .col-sm-12.btn.btn-info {
-        display: none;
-    }
-    .owl-nav {
-        display: none;
-    }
-    .owl-theme .owl-dots .owl-dot {
-        display: none;
-        outline: none;
-        margin-top: 10px;
-    }
+    width: 100%;
     .container-fluid {
-        .owl-theme {
+        .welcome-youtube {
             img {
-                width: 100%;
-                height: 100px;
+                width: 90%;
+                height: 150px;
                 transition: 0.1s;
                 object-fit: cover;
             }
@@ -22,15 +12,11 @@
             img:hover {
                 border: 3px solid #ff6c2c;
             }
-            .owl-item.active:first-child {
-                height: 100px !important;
-                display: none;
-            }
 
-            // .item.active:first-child( height: 100px;)
-            // .item.active:nth-child(2)
-            // .item.active:last-child()
-            //  item.active: first-child(height: 100px;);
+            // button.slick-arrow.slick-prev,
+            // button.slick-arrow.slick-next {
+            //     display: none !important;
+            // }
         }
     }
 }

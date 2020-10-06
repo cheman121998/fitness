@@ -3,10 +3,13 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 body {
     margin: 0;
     box-sizing: border-box;
     letter-spacing: 0.005rem;
+    overflow-x: hidden;
 }
 
 .container {

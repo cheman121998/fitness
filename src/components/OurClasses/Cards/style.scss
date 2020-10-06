@@ -42,10 +42,31 @@
             }
             .custom-card:hover {
                 height: 100%;
-                background: rgba(0, 0, 0, 0.8);
+                background: rgba(255, 29, 106, 0.86);
+
                 p {
                     display: block;
                 }
+                .btn-advanced {
+                    display: block;
+                }
+            }
+            .btn-advanced {
+                width: 200px;
+                height: 50px;
+                border-radius: 25px;
+                border: none;
+                outline: none;
+                transition: 0.5s;
+                color: #ff6c2c;
+                box-shadow: 3px 10px 8px rgba(0, 0, 0, 0.3);
+                margin-top: 20px;
+                display: none;
+            }
+            .btn-advanced:hover {
+                font-weight: bold;
+                color: #ffffff;
+                background: #ff6c2c;
             }
         }
     }

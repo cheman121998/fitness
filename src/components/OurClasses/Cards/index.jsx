@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import { Card } from 'antd';
+import { Card, Tooltip, Button } from 'antd';
 
 import { dataCardClasses } from '../../../api/Data';
 
@@ -13,6 +13,9 @@ const ListCart = ({ title, description, image }) => (
             <h3>{title}</h3>
             <div className="line-our-classes"></div>
             <p>{description}</p>
+            <Tooltip trigger="click">
+                <Button className="btn-advanced">READ MORE</Button>
+            </Tooltip>
         </div>
     </Card>
 );

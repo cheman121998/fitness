@@ -1,6 +1,8 @@
 .advanced {
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     .container {
@@ -39,6 +41,11 @@
             transition: 0.5s;
             color: #ff6c2c;
             box-shadow: 3px 10px 8px rgba(0, 0, 0, 0.3);
+        }
+        .btn-advanced:hover {
+            font-weight: bold;
+            color: #ffffff;
+            background: #ff6c2c;
         }
     }
 }

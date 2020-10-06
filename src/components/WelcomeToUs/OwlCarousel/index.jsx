@@ -1,87 +1,37 @@
 import React from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-
+import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './style.scss';
-import {
-    slideYoutubeBoyGirl,
-    slideYoutubeWomanDumbbell,
-    slideYoutubeWomanYogaSmall,
-} from '../../../assets/images';
+import { dataSliderYoutube } from '../../../api/Data';
+
+const ListLink = ({ src, to, alt }) => (
+    <div>
+        <Link to={to}>
+            {console.log('Image Youtube', src)}
+            <img src={src} alt={alt} />
+        </Link>
+    </div>
+);
 export default class ShowOwlCarousel extends React.Component {
     render() {
+        const settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+        };
         return (
             <div className="welcome-carousel">
                 <div className="container-fluid">
-                    <OwlCarousel
-                        items={3}
-                        className="owl-theme"
-                        loop
-                        nav
-                        margin={8}
-                        autoplay="true"
-                        autoplayTimeout="2000"
-                    >
-                        <Router>
-                            <div>
-                                <Link to="/">
-                                    <img
-                                        className="img"
-                                        alt="img-youtube"
-                                        src={slideYoutubeBoyGirl}
-                                    />
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/hourse">
-                                    <img
-                                        className="img"
-                                        alt="img-youtube"
-                                        src={slideYoutubeWomanDumbbell}
-                                    />
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/cat">
-                                    <img
-                                        className="img"
-                                        alt="img-youtube"
-                                        src={slideYoutubeWomanYogaSmall}
-                                    />
-                                </Link>
-                            </div>
-
-                            <div>
-                                <Link to="/house">
-                                    <img
-                                        className="img"
-                                        alt="img-youtube"
-                                        src={slideYoutubeWomanYogaSmall}
-                                    />
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/sweet">
-                                    <img
-                                        className="img"
-                                        alt="img-youtube"
-                                        src={slideYoutubeWomanYogaSmall}
-                                    />
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/home">
-                                    <img
-                                        className="img"
-                                        alt="img-youtube"
-                                        src={slideYoutubeBoyGirl}
-                                    />
-                                </Link>
-                            </div>
-                        </Router>
-                    </OwlCarousel>
+                    <Slider className="welcome-youtube" {...settings}>
+                        {dataSliderYoutube.slice(0, 3).map((e, i) => (
+                            <ListLink key={i} to={e.to} alt={e.alt} src={e.image} />
+                        ))}
+                    </Slider>
                 </div>
             </div>
         );

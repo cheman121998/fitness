@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import 'antd/dist/antd.css';
-import { Menu, Row, Tooltip } from 'antd';
+import { Menu, Row, Tooltip, Drawer } from 'antd';
 import { logo } from '../../assets/images';
 
 const menu = (key, label) => <Menu.Item key={key}>{label}</Menu.Item>;
@@ -30,17 +30,25 @@ class Header extends React.Component {
                         </Tooltip>
 
                         <div className="menu-item" id="menu">
-                            <Menu
-                                onClick={this.handleClick}
-                                selectedKeys={[current]}
-                                mode="horizontal"
+                            <Drawer
+                                title="Basic Drawer"
+                                placement="right"
+                                closable={false}
+                                // onClose={onClose}
+                                visible={visible}
                             >
-                                {menu('homepages', 'HOMPAGE')}
-                                {menu('pages', 'PAGES')}
-                                {menu('classes', 'CLASSES')}
-                                {menu('news', 'NEWS')}
-                                {menu('contact', 'CONTACTS')}
-                            </Menu>
+                                <Menu
+                                    onClick={this.handleClick}
+                                    selectedKeys={[current]}
+                                    mode="horizontal"
+                                >
+                                    {menu('homepages', 'HOMPAGE')}
+                                    {menu('pages', 'PAGES')}
+                                    {menu('classes', 'CLASSES')}
+                                    {menu('news', 'NEWS')}
+                                    {menu('contact', 'CONTACTS')}
+                                </Menu>
+                            </Drawer>
                         </div>
                         <div className="menuMobile">
                             <button className="btnMenu" onClick={this.showMenu}>

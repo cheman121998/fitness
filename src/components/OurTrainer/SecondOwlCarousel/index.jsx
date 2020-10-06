@@ -1,71 +1,62 @@
 import React from 'react';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 import './style.scss';
-import {
-    slideTrainerManLift,
-    slideTrainerTwoWomen,
-    slideTrainerWomanPullRope,
-    slideTrainerWomanBoxer,
-    slideTrainerManFitness,
-} from '../../../assets/images';
+import { dataSlider2Trainer } from '../../../api/Data';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const ListLink = ({ to, src, alt }) => (
+    <div>
+        <Link to={to}>
+            <img src={src} alt={alt} />
+        </Link>
+    </div>
+);
 export default class SecondOwlCarousel extends React.Component {
     render() {
+        const settings = {
+            dots: false,
+            infinite: true,
+            speed: 100,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            autoplay: true,
+            initialSlide: 0,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        initialSlide: 2,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+        };
         return (
             <div className="second-owl-carousel">
-                <OwlCarousel items={5} className="owl-theme" loop nav margin={0}>
-                    <Router>
-                        <div>
-                            <Link to="/">
-                                <img className="img" alt="img-youtube" src={slideTrainerManLift} />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/hourse">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerManFitness}
-                                />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/cat">
-                                <img className="img" alt="img-youtube" src={slideTrainerTwoWomen} />
-                            </Link>
-                        </div>
-
-                        <div>
-                            <Link to="/house">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerWomanPullRope}
-                                />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/sweet">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerWomanBoxer}
-                                />
-                            </Link>
-                        </div>
-                        <div>
-                            <Link to="/home">
-                                <img
-                                    className="img"
-                                    alt="img-youtube"
-                                    src={slideTrainerWomanPullRope}
-                                />
-                            </Link>
-                        </div>
-                    </Router>
-                </OwlCarousel>
+                <Slider className="slide-trainer2" {...settings}>
+                    {dataSlider2Trainer.slice(0, 5).map((e, i) => (
+                        <ListLink ley={i} to={e.to} alt={e.alt} src={e.image} />
+                    ))}
+                </Slider>
             </div>
         );
     }

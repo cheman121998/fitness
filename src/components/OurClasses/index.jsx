@@ -2,7 +2,6 @@ import React from 'react';
 import './style.scss';
 import Cards from './Cards';
 import Content from './Content';
-import Advanced from './AdvancedGymnastic';
 
 const ran = (max) => Math.floor(Math.random() * Math.floor(max));
 class OurClasses extends React.Component {
@@ -26,7 +25,6 @@ class OurClasses extends React.Component {
         return (
             <div className="our-classes">
                 <Content />
-                <Advanced />
                 <Cards />
             </div>
         );

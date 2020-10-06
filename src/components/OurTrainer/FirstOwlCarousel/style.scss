@@ -1,57 +1,31 @@
-.first-owl-carousel {
-    .owl-carousel {
-        .owl-stage-outer {
-            .owl-stage {
-                .owl-item {
-                    object-fit: cover;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+.first-trainer {
+    .slider-trainer1 {
+        .slick-list {
+            width: 100%;
+            .slick-track {
+                .slick-slide.slick-active:first-child {
+                    width: 100px !important;
+                    height: 100px !important;
+                    margin-right: 30px;
+                    img.img {
+                        width: 100%;
+                    }
                 }
-                // //First
-                // .owl-item:not(.active) + .active {
-                //     width: 442px;
-                //     height: 564px;
-                // }
-                // //Second
-                // .owl-item.active + .active {
-                //     width: 342px;
-                //     height: 464px;
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: center;
-                // }
-                // //All active (3rd)
-                // .owl-item.active {
-                //     width: 242px;
-                //     height: 364px;
-                // }
+                .slick-slide.slick-active:nth-child(2) {
+                    width: 100px !important;
+                    height: 100px !important;
+                    img.img {
+                        width: 100%;
+                    }
+                }
+                .slick-slide.slick-active:nth-child(2) {
+                    width: 50px !important;
+                    height: 50px !important;
+                    img.img {
+                        width: 100%;
+                    }
+                }
             }
         }
-        .owl-nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: absolute;
-            left: -15px;
-            right: -15px;
-            top: 35%;
-            color: #ffffff;
-            font-size: 60px;
-        }
-        .owl-theme .owl-dots .owl-dot {
-            display: none;
-        }
-    }
-    .owl-carousel .owl-nav button.owl-prev,
-    .owl-carousel .owl-nav button.owl-next {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background: #ff1d6a;
-        outline: none;
     }
 }

@@ -1,84 +1,62 @@
 import React from 'react';
 import './style.scss';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { avt } from '../../assets/images';
+import Slider from 'react-slick';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { dataTest1, dataTest2 } from '../../api/Data';
+
+const Slider1 = ({ description }) => <div className="item">{description}</div>;
+const Slider2 = ({ src, nameUser, work, alt }) => (
+    <div className="item">
+        <img src={src} alt={alt} />
+        <h4>{nameUser}</h4>
+        <h6>{work}</h6>
+    </div>
+);
 class Testmonials extends React.Component {
     render() {
+        const settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+        };
+        const settings2 = {
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+        };
         return (
             <div className="testmonials content">
                 <div className="container">
                     <div className="test-intro title">
                         <h2>Testmonials</h2>
                         <div className="line"></div>
-                        <OwlCarousel
-                            id="owl-theme1"
-                            items={1}
-                            className="owl-theme"
-                            loop
-                            margin={10}
-                            nav
-                        >
-                            <div className="item">
-                                <div>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                    aliquyam erat, sed diam voluptua. At vero
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div>Man Man</div>
-                            </div>
-                            <div className="item">
-                                <div>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                    aliquyam erat, sed diam voluptua. At vero
-                                </div>
-                            </div>
-                            <div className="item">
-                                <div>Man Man stronger</div>
-                            </div>
-                            <div className="item">
-                                <div>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                    aliquyam erat, sed diam voluptua. At vero
-                                </div>
-                            </div>
-                        </OwlCarousel>
-                        <OwlCarousel
-                            id="owl-theme2"
-                            items={1}
-                            className="owl-theme2"
-                            loop
-                            margin={10}
-                            nav
-                            autoplay
-                        >
-                            <div className="item">
-                                <img src={avt} alt="avt" />
-                                <h4>Ahmed Man</h4>
-                                <h6>CLIENT</h6>
-                            </div>
-                            <div className="item">
-                                <img src={avt} alt="avt" />
-                                <h4>Ahmed Elsayed</h4>
-                                <h6>USER</h6>
-                            </div>
-                            <div className="item">
-                                <img src={avt} alt="avt" />
-                                <h4>Ahmed Minh</h4>
-                                <h6>ADMIN</h6>
-                            </div>
-                            <div className="item">
-                                <img src={avt} alt="avt" />
-                                <h4>Man Man</h4>
-                                <h6>USER</h6>
-                            </div>
-                        </OwlCarousel>
+
+                        <Slider className="slider-quote" {...settings}>
+                            {console.log('Data quote', dataTest1)}
+                            {dataTest1.slice(0, 1).map((e, i) => (
+                                <Slider1 key={i} description={e.description} />
+                            ))}
+                        </Slider>
+
+                        <Slider className="user" {...settings2}>
+                            {dataTest2.slice(0, 1).map((e, i) => (
+                                <Slider2
+                                    key={i}
+                                    alt={e.alt}
+                                    work={e.work}
+                                    nameUser={e.name}
+                                    src={e.image}
+                                />
+                            ))}
+                        </Slider>
                     </div>
                 </div>
             </div>

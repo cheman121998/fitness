@@ -47,7 +47,9 @@ export default class ContactUs extends React.Component {
                         />
                     </Form.Item>
                     <Tooltip trigger="click" title="Btn Sumbit">
-                        <Button>Submit</Button>
+                        <div className="btn-submit">
+                            <Button>Submit</Button>
+                        </div>
                     </Tooltip>
                 </Form>
                 <div className="contact">

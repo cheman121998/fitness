@@ -13,7 +13,15 @@ import {
     slideTrainerWomanSexy,
     cardBlogMaraton,
     cardBlogWomanBoxer,
-    cardBlogWomanPush,
+    slideYoutubeBoyGirl,
+    slideYoutubeWomanDumbbell,
+    slideYoutubeWomanYogaSmall,
+    slideTrainerManFitness,
+    slideTrainerManLift,
+    slideTrainerTwoWomen,
+    slideTrainerWomanBoxer,
+    slideTrainerWomanPullRope,
+    avt,
 } from './../assets/images';
 
 export const dataCard = [
@@ -67,6 +75,44 @@ export const dataCard = [
     },
 ];
 
+export const dataSliderYoutube = [
+    {
+        id: 1,
+        alt: 'Advanced Gymnastic',
+        to: '/pig',
+        image: slideYoutubeWomanYogaSmall,
+    },
+    {
+        id: 2,
+        alt: 'Advanced Gymnastic',
+        to: '/cat',
+        image: slideYoutubeWomanDumbbell,
+    },
+    {
+        id: 3,
+        alt: 'Advanced Gymnastic',
+        to: '/dog',
+        image: slideYoutubeBoyGirl,
+    },
+    {
+        id: 4,
+        alt: 'Advanced Gymnastic',
+        to: '/heo',
+        image: slideYoutubeWomanYogaSmall,
+    },
+    {
+        id: 5,
+        alt: 'Advanced Gymnastic',
+        to: '/ga',
+        image: slideYoutubeWomanDumbbell,
+    },
+    {
+        id: 6,
+        alt: 'Advanced Gymnastic',
+        to: '/chut',
+        image: slideYoutubeBoyGirl,
+    },
+];
 export const dataCardClasses = [
     {
         id: 1,
@@ -173,6 +219,45 @@ export const dataSlider1Trainer = [
     },
 ];
 
+export const dataSlider2Trainer = [
+    {
+        id: 1,
+        to: '/cat',
+        alt: 'Describe cat',
+        image: slideTrainerManFitness,
+    },
+    {
+        id: 2,
+        to: '/dog',
+        alt: 'Describe cat',
+        image: slideTrainerWomanPullRope,
+    },
+    {
+        id: 3,
+        to: '/pig',
+        alt: 'Describe cat',
+        image: slideTrainerWomanBoxer,
+    },
+    {
+        id: 4,
+        to: '/cat',
+        alt: 'Describe cat',
+        image: slideTrainerTwoWomen,
+    },
+    {
+        id: 5,
+        to: '/lion',
+        alt: 'Describe cat',
+        image: slideTrainerManLift,
+    },
+    {
+        id: 6,
+        to: '/dragon',
+        alt: 'Describe cat',
+        image: slideTrainerManFitness,
+    },
+];
+
 export const dataDescription = [
     {
         id: 1,
@@ -240,5 +325,52 @@ export const dataCardBlog = [
         image: cardBlogWomanBoxer,
         description:
             'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis.',
+    },
+];
+
+export const dataTest1 = [
+    {
+        id: 1,
+        description:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero',
+    },
+    {
+        id: 2,
+        description:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero',
+    },
+    {
+        id: 3,
+        description:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero',
+    },
+    {
+        id: 4,
+        description:
+            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero',
+    },
+];
+
+export const dataTest2 = [
+    {
+        id: 1,
+        name: 'Man Man',
+        work: 'USER',
+        alt: 'abc',
+        image: avt,
+    },
+    {
+        id: 2,
+        name: 'Ahmed Elsayed',
+        work: 'CLIENT',
+        alt: 'abc',
+        image: avt,
+    },
+    {
+        id: 3,
+        name: 'Ahmed Minh',
+        work: 'ADMIN',
+        alt: 'abc',
+        image: avt,
     },
 ];
