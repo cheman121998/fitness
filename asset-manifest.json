@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/fitness/static/css/main.5afaa97e.chunk.css",
-    "main.js": "/fitness/static/js/main.160a1c1a.chunk.js",
-    "main.js.map": "/fitness/static/js/main.160a1c1a.chunk.js.map",
+    "main.css": "/fitness/static/css/main.bb320f9b.chunk.css",
+    "main.js": "/fitness/static/js/main.73b25ce3.chunk.js",
+    "main.js.map": "/fitness/static/js/main.73b25ce3.chunk.js.map",
     "runtime-main.js": "/fitness/static/js/runtime-main.fb575ab4.js",
     "runtime-main.js.map": "/fitness/static/js/runtime-main.fb575ab4.js.map",
-    "static/css/2.67faa847.chunk.css": "/fitness/static/css/2.67faa847.chunk.css",
-    "static/js/2.1a1550c8.chunk.js": "/fitness/static/js/2.1a1550c8.chunk.js",
-    "static/js/2.1a1550c8.chunk.js.map": "/fitness/static/js/2.1a1550c8.chunk.js.map",
+    "static/css/2.b1a73f3a.chunk.css": "/fitness/static/css/2.b1a73f3a.chunk.css",
+    "static/js/2.9dfe8d74.chunk.js": "/fitness/static/js/2.9dfe8d74.chunk.js",
+    "static/js/2.9dfe8d74.chunk.js.map": "/fitness/static/js/2.9dfe8d74.chunk.js.map",
     "index.html": "/fitness/index.html",
-    "precache-manifest.6180fc92cec3df73260f6c8d49cfc1c7.js": "/fitness/precache-manifest.6180fc92cec3df73260f6c8d49cfc1c7.js",
+    "precache-manifest.a4981893b9ec75c60f825aed7fdcd533.js": "/fitness/precache-manifest.a4981893b9ec75c60f825aed7fdcd533.js",
     "service-worker.js": "/fitness/service-worker.js",
-    "static/css/2.67faa847.chunk.css.map": "/fitness/static/css/2.67faa847.chunk.css.map",
-    "static/css/main.5afaa97e.chunk.css.map": "/fitness/static/css/main.5afaa97e.chunk.css.map",
-    "static/js/2.1a1550c8.chunk.js.LICENSE.txt": "/fitness/static/js/2.1a1550c8.chunk.js.LICENSE.txt",
+    "static/css/2.b1a73f3a.chunk.css.map": "/fitness/static/css/2.b1a73f3a.chunk.css.map",
+    "static/css/main.bb320f9b.chunk.css.map": "/fitness/static/css/main.bb320f9b.chunk.css.map",
+    "static/js/2.9dfe8d74.chunk.js.LICENSE.txt": "/fitness/static/js/2.9dfe8d74.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/fitness/static/media/bg-main.24f8b586.jpg",
     "static/media/card-blog-maraton.jpg": "/fitness/static/media/card-blog-maraton.96ec0225.jpg",
     "static/media/card-blog-woman-boxer.jpg": "/fitness/static/media/card-blog-woman-boxer.9cf58877.jpg",
@@ -28,6 +28,7 @@
     "static/media/card-wc-woman-sexy.jpg": "/fitness/static/media/card-wc-woman-sexy.a0a4d662.jpg",
     "static/media/card-wc-woman-standing.jpg": "/fitness/static/media/card-wc-woman-standing.7bea0dbb.jpg",
     "static/media/logo.svg": "/fitness/static/media/logo.a4b81629.svg",
+    "static/media/App.css": "/fitness/static/media/slick.f97e3bbf.svg",
     "static/media/slide-trainer-man-fitness.jpg": "/fitness/static/media/slide-trainer-man-fitness.1215f1e8.jpg",
     "static/media/slide-trainer-man-lift.jpg": "/fitness/static/media/slide-trainer-man-lift.a31a8d88.jpg",
     "static/media/slide-trainer-man-power.jpg": "/fitness/static/media/slide-trainer-man-power.4f34fb6c.jpg",
@@ -42,9 +43,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fb575ab4.js",
-    "static/css/2.67faa847.chunk.css",
-    "static/js/2.1a1550c8.chunk.js",
-    "static/css/main.5afaa97e.chunk.css",
-    "static/js/main.160a1c1a.chunk.js"
+    "static/css/2.b1a73f3a.chunk.css",
+    "static/js/2.9dfe8d74.chunk.js",
+    "static/css/main.bb320f9b.chunk.css",
+    "static/js/main.73b25ce3.chunk.js"
   ]
 }

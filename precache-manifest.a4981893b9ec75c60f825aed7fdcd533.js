@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72ab0575d840eda1ad0c1f5bb22066fd",
+    "revision": "3de5d15790739c99704e4f22ae1d0d44",
     "url": "/fitness/index.html"
   },
   {
-    "revision": "21ed08b5f8fb0516e666",
-    "url": "/fitness/static/css/2.67faa847.chunk.css"
+    "revision": "6e78cad61427e4f893dc",
+    "url": "/fitness/static/css/2.b1a73f3a.chunk.css"
   },
   {
-    "revision": "895f0b6570d08f3ec1e6",
-    "url": "/fitness/static/css/main.5afaa97e.chunk.css"
+    "revision": "3eb4c419f3e5433aa7d8",
+    "url": "/fitness/static/css/main.bb320f9b.chunk.css"
   },
   {
-    "revision": "21ed08b5f8fb0516e666",
-    "url": "/fitness/static/js/2.1a1550c8.chunk.js"
+    "revision": "6e78cad61427e4f893dc",
+    "url": "/fitness/static/js/2.9dfe8d74.chunk.js"
   },
   {
-    "revision": "1c0c8417523bf3c55484c1c5efb74a72",
-    "url": "/fitness/static/js/2.1a1550c8.chunk.js.LICENSE.txt"
+    "revision": "56729d980da09961afe8d497a21eec12",
+    "url": "/fitness/static/js/2.9dfe8d74.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "895f0b6570d08f3ec1e6",
-    "url": "/fitness/static/js/main.160a1c1a.chunk.js"
+    "revision": "3eb4c419f3e5433aa7d8",
+    "url": "/fitness/static/js/main.73b25ce3.chunk.js"
   },
   {
     "revision": "bf9460b2a94932e2a696",
@@ -86,6 +86,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a4b816292ad45f60447727f7c0040f2e",
     "url": "/fitness/static/media/logo.a4b81629.svg"
+  },
+  {
+    "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
+    "url": "/fitness/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/fitness/static/media/slick.ced611da.eot"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/fitness/static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "f97e3bbf73254b0112091d0192f17aec",
+    "url": "/fitness/static/media/slick.f97e3bbf.svg"
   },
   {
     "revision": "1215f1e834078123c293520ae44ac7ae",
