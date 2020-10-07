@@ -82,6 +82,11 @@
                 font-size: 15px;
                 font-weight: bold;
                 font-family: 'Raleway', sans-serif;
+                transition: 0.5s;
+            }
+            .btn-get-started:hover {
+                opacity: 0.9;
+                box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.86);
             }
             .youtube {
                 display: flex;
@@ -91,6 +96,7 @@
                     margin-right: 10px;
                     font-size: 24px;
                 }
+
                 .txt-watch {
                     color: #ffffff;
                     font-weight: bold;

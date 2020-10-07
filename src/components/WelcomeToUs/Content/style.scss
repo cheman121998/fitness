@@ -27,8 +27,8 @@ $raleway: 'Raleway', sans-serif;
         }
         button.ant-btn:active,
         button.ant-btn:hover {
-            font-weight: bold;
-            zoom: 1.01;
+            box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+            //border: 1px solid #ff1d6a;
         }
     }
     p:first-child {

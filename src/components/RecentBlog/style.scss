@@ -177,7 +177,7 @@
                         }
                         .txt-blog .divide {
                             column-count: 2;
-                            overflow: auto;
+                            overflow-x: hidden;
                             height: 50vh;
                         }
                     }
@@ -189,6 +189,7 @@
 @media screen and (min-width: 992px) {
     .recent-blog {
         .card-right {
+            overflow-x: hidden;
             .ant-card {
                 .ant-card-body {
                     .content-blog {
