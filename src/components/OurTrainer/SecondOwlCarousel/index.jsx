@@ -51,10 +51,10 @@ export default class SecondOwlCarousel extends React.Component {
             ],
         };
         return (
-            <div className="second-owl-carousel">
+            <div className="second-trainer">
                 <Slider className="slide-trainer2" {...settings}>
-                    {dataSlider2Trainer.slice(0, 5).map((e, i) => (
-                        <ListLink ley={i} to={e.to} alt={e.alt} src={e.image} />
+                    {dataSlider2Trainer.map((e, i) => (
+                        <ListLink key={i} to={e.to} alt={e.alt} src={e.image} />
                     ))}
                 </Slider>
             </div>

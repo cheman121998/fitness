@@ -7,6 +7,17 @@ import { dataSlider1Trainer } from '../../../api/Data';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+// const getItems = document.getElementsByClassName('slick-active');
+// console.log('Items are working', getItems);
+// for (let getItem of getItems) {
+//     console.log('Get item', getItem);
+// }
+// for (var i = 0; i < getItems.length; i++) {
+//     console.log('Get item nầy', getItems[i].id); m để ở đây thì hắn log trước khi render => thì ko có sider
+// đó là t nói sản rứa chơ hỏi a ơ :v
+
+// }
+
 const ListLink = ({ to, alt, src }) => (
     <div>
         <Link to={to}>
@@ -16,13 +27,24 @@ const ListLink = ({ to, alt, src }) => (
     </div>
 );
 export default class FirstOwlCarousel extends React.Component {
+    state = {
+        slideIndex: 0,
+        updateCount: 0,
+    };
+    componentDidMount() {
+        const getItems = document.getElementsByClassName('slick-active');
+        console.log('getItem', getItems);
+        // for (let i = 0; i < getItems.length; i++) {
+        //     console.log('=========First========', getItems[i]);
+        // }
+    }
     render() {
         const settings = {
             dots: false,
             infinite: true,
             speed: 500,
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             autoplay: true,
             initialSlide: 0,
             responsive: [
@@ -51,11 +73,13 @@ export default class FirstOwlCarousel extends React.Component {
                     },
                 },
             ],
+            afterChange: () => this.setState((state) => ({ updateCount: state.updateCount + 1 })),
+            beforeChange: (current, next) => this.setState({ slideIndex: next }),
         };
         return (
             <div className="first-trainer">
                 <Slider className="slider-trainer1" {...settings}>
-                    {dataSlider1Trainer.slice(0, 3).map((e, i) => (
+                    {dataSlider1Trainer.map((e, i) => (
                         <ListLink key={i} to={e.to} alt={e.alt} src={e.image} />
                     ))}
                 </Slider>

@@ -1,31 +1,21 @@
 .first-trainer {
-    .slider-trainer1 {
-        .slick-list {
-            width: 100%;
-            .slick-track {
-                .slick-slide.slick-active:first-child {
-                    width: 100px !important;
-                    height: 100px !important;
-                    margin-right: 30px;
-                    img.img {
-                        width: 100%;
-                    }
-                }
-                .slick-slide.slick-active:nth-child(2) {
-                    width: 100px !important;
-                    height: 100px !important;
-                    img.img {
-                        width: 100%;
-                    }
-                }
-                .slick-slide.slick-active:nth-child(2) {
-                    width: 50px !important;
-                    height: 50px !important;
-                    img.img {
-                        width: 100%;
-                    }
-                }
-            }
+    img {
+        width: 300px !important;
+        height: 400px;
+        opacity: 0.6;
+        transition: 0.5s;
+    }
+    img:hover {
+        opacity: 1;
+    }
+
+    button {
+        background: #ff1d6a !important;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        span {
+            background: #ff1d6a !important;
         }
     }
 }

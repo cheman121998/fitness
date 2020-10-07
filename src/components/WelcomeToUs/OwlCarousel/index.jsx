@@ -28,7 +28,7 @@ export default class ShowOwlCarousel extends React.Component {
             <div className="welcome-carousel">
                 <div className="container-fluid">
                     <Slider className="welcome-youtube" {...settings}>
-                        {dataSliderYoutube.slice(0, 3).map((e, i) => (
+                        {dataSliderYoutube.map((e, i) => (
                             <ListLink key={i} to={e.to} alt={e.alt} src={e.image} />
                         ))}
                     </Slider>

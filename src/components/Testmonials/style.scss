@@ -13,12 +13,21 @@
             margin: 0 auto;
             color: white;
 
-            .slick-slider {
+            .slider-quote {
                 width: 80%;
                 text-align: center;
                 font-size: 20px;
                 font-family: 'Montserrat', sans-serif;
                 font-style: italic;
+                button {
+                    background: #ff1d6a !important;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    span {
+                        background: #ff1d6a !important;
+                    }
+                }
             }
 
             .user {
@@ -27,6 +36,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                button {
+                    display: none !important;
+                }
                 .slick-list {
                     .slick-track {
                         width: 100%;

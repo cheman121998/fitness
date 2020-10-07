@@ -27,9 +27,9 @@ function App() {
                     <Route>
                         <OurClasses />
                     </Route>
-                    {/* <Route>
+                    <Route>
                         <OurTrainer />
-                    </Route> */}
+                    </Route>
                     <Route>
                         <Testmonials />
                     </Route>

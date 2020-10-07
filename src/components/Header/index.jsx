@@ -23,19 +23,35 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <div className="container">
-                    <Row className="menu">
+                    <div className="wrapNav menu">
                         <Tooltip className="logo-header" trigger="click" title="Image logo">
                             <img src={logo} alt="logo" />
                             <div className="txt-logo">Fitness Center</div>
                         </Tooltip>
 
-                        <div className="menu-item" id="menu">
+                        <div className="nav menu-item" id="menu">
+                            <Menu
+                                onClick={this.handleClick}
+                                selectedKeys={[current]}
+                                mode="horizontal"
+                            >
+                                {menu('homepages', 'HOMPAGE')}
+                                {menu('pages', 'PAGES')}
+                                {menu('classes', 'CLASSES')}
+                                {menu('news', 'NEWS')}
+                                {menu('contact', 'CONTACTS')}
+                            </Menu>
+                        </div>
+                        <div className="menuMobile">
+                            <button className="btnMenu" onClick={this.showMenu}>
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </button>
                             <Drawer
-                                title="Basic Drawer"
+                                title="Menu"
                                 placement="right"
                                 closable={false}
-                                // onClose={onClose}
-                                visible={visible}
+                                onClose={this.closeMenu}
+                                visible={this.state.visible}
                             >
                                 <Menu
                                     onClick={this.handleClick}
@@ -50,25 +66,7 @@ class Header extends React.Component {
                                 </Menu>
                             </Drawer>
                         </div>
-                        <div className="menuMobile">
-                            <button className="btnMenu" onClick={this.showMenu}>
-                                <ion-icon name="menu-outline"></ion-icon>
-                            </button>
-                            <Menu
-                                title="Menu"
-                                placement="right"
-                                closable={false}
-                                onClose={this.closeMenu}
-                                visible={this.state.visible}
-                            >
-                                {menuMobile('homepages', 'HOMPAGE')}
-                                {menuMobile('pages', 'PAGES')}
-                                {menuMobile('classes', 'CLASSES')}
-                                {menuMobile('news', 'NEWS')}
-                                {menuMobile('contact', 'CONTACTS')}
-                            </Menu>
-                        </div>
-                    </Row>
+                    </div>
                 </div>
             </div>
         );

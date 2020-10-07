@@ -1,52 +1,22 @@
-.second-owl-carousel {
-    margin: 200px auto;
-    .owl-theme {
-        .owl-nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: absolute;
-            left: 80px;
-            right: 80px;
-            top: 35%;
-            color: #ffffff;
-            font-size: 60px;
-        }
+.second-trainer {
+    margin: 200px 0;
+    img {
+        width: 300px !important;
+        height: 400px;
+        opacity: 0.6;
+        transition: transform 0.5s;
     }
-    .owl-carousel .owl-nav button.owl-prev,
-    .owl-carousel .owl-nav button.owl-next {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    img:hover {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    button {
+        background: #ff1d6a !important;
         border-radius: 50%;
-        background: #ff1d6a;
-        outline: none;
-    }
-    .owl-carousel button.owl-dot {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .second-owl-carousel {
-        margin: 50px auto;
-        margin-bottom: 200px;
-
-        .owl-theme {
-            .owl-nav {
-                left: 10px;
-                right: 10px;
-                top: 0;
-                bottom: 0;
-                font-size: 30px;
-            }
-        }
-        .owl-carousel .owl-nav button.owl-prev,
-        .owl-carousel .owl-nav button.owl-next {
-            width: 30px;
-            height: 30px;
+        width: 30px;
+        height: 30px;
+        span {
+            background: #ff1d6a !important;
         }
     }
 }

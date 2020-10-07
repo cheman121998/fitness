@@ -17,7 +17,7 @@ const Slider2 = ({ src, nameUser, work, alt }) => (
 class Testmonials extends React.Component {
     render() {
         const settings = {
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
@@ -26,7 +26,7 @@ class Testmonials extends React.Component {
         };
         const settings2 = {
             dots: true,
-            infinite: true,
+            infinite: false,
             speed: 1000,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -41,13 +41,13 @@ class Testmonials extends React.Component {
 
                         <Slider className="slider-quote" {...settings}>
                             {console.log('Data quote', dataTest1)}
-                            {dataTest1.slice(0, 1).map((e, i) => (
+                            {dataTest1.map((e, i) => (
                                 <Slider1 key={i} description={e.description} />
                             ))}
                         </Slider>
 
                         <Slider className="user" {...settings2}>
-                            {dataTest2.slice(0, 1).map((e, i) => (
+                            {dataTest2.map((e, i) => (
                                 <Slider2
                                     key={i}
                                     alt={e.alt}
