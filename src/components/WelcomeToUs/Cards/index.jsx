@@ -7,8 +7,9 @@ const { Meta } = Card;
 const ListCard = ({ title, description, background, price, backgroundColor }) => (
     <Col xs={24} md={24} lg={8}>
         <Card
+            className="wc-card"
             style={({ width: '30%' }, { background: `url(${background})` })}
-            bodyStyle={{ backgroundColor: { backgroundColor } }}
+            bodyStyle={{ backgroundColor: 'rgba(0,0,0,0.5)' }}
         >
             <Meta title={title} description={description} />
             <Button>${price}*/M</Button>

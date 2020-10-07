@@ -1,14 +1,16 @@
 .second-trainer {
     margin: 200px 0;
     img {
-        width: 300px !important;
+        width: 90% !important;
         height: 400px;
         opacity: 0.6;
         transition: transform 0.5s;
+        object-fit: cover;
     }
     img:hover {
         opacity: 1;
         transform: scale(1.2);
+        z-index: 2;
     }
     button {
         background: #ff1d6a !important;
